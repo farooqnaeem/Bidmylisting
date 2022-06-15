@@ -9,8 +9,5 @@ test('BidMyListing Homepage', async ({ page, browserName }) => {
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/BidMyListing/);
 
-  // 
-  await page.locator('.button:has-text("Sign In")').click();
-
   await page.screenshot({ path: 'homepage-'+browserName+'.png', fullPage: true });
 });
