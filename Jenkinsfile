@@ -29,6 +29,7 @@ pipeline {
         success {
         //   archiveArtifacts(artifacts: '*.png', followSymlinks: false)
           sh 'pwd'
+          sh 'ls -la'
           
           // publish html
           publishHTML target: [
