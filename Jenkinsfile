@@ -1,5 +1,8 @@
 pipeline {
   agent { 
+    steps {
+        sh 'ls -la /var/run/'
+    }
     docker { 
       image 'mcr.microsoft.com/playwright:v1.17.2-focal'
     } 
