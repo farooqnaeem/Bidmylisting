@@ -32,14 +32,15 @@ pipeline {
           sh 'ls -la'
           
           // publish html
-          publishHTML target: [
+          publishHTML([
             allowMissing: false,
-            alwaysLinkToLastBuild: false,
+            alwaysLinkToLastBuild: true,
             keepAll: true,
             reportDir: 'playwright-report',
             reportFiles: 'index.html',
-            reportName: 'UI Test Report'
-          ]
+            reportName: 'Playwright Report',
+            reportTitles: ''
+          ])
         }
 
 
