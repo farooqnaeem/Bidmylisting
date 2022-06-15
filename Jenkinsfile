@@ -28,14 +28,14 @@ pipeline {
       post {
         success {
         //   archiveArtifacts(artifacts: '*.png', followSymlinks: false)
-        //   sh 'rm -rf *.png'
+          sh 'pwd'
           
           // publish html
           publishHTML target: [
             allowMissing: false,
             alwaysLinkToLastBuild: false,
             keepAll: true,
-            reportDir: '../playwright-report',
+            reportDir: 'playwright-report',
             reportFiles: 'index.html',
             reportName: 'UI Test Report'
           ]
