@@ -29,10 +29,9 @@ pipeline {
         success {
           archiveArtifacts(artifacts: '*.png', followSymlinks: false)
           sh 'rm -rf *.png'
-        }
-
-        // publish html
-        publishHTML target: [
+          
+          // publish html
+          publishHTML target: [
             allowMissing: false,
             alwaysLinkToLastBuild: false,
             keepAll: true,
@@ -40,6 +39,9 @@ pipeline {
             reportFiles: 'index.html',
             reportName: 'UI Test Report'
           ]
+        }
+
+
 
       }
     }
