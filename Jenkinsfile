@@ -30,6 +30,17 @@ pipeline {
           archiveArtifacts(artifacts: '*.png', followSymlinks: false)
           sh 'rm -rf *.png'
         }
+
+        // publish html
+        publishHTML target: [
+            allowMissing: false,
+            alwaysLinkToLastBuild: false,
+            keepAll: true,
+            reportDir: 'playwright-report',
+            reportFiles: 'index.html',
+            reportName: 'UI Test Report'
+          ]
+
       }
     }
   }
