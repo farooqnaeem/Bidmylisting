@@ -1,4 +1,7 @@
 pipeline {
+  parameters {
+      choice(name: 'Environment', choices: ['dev', 'qa', 'prod'], description: 'Select environment to run automated tests')
+  }
   agent { 
     docker { 
       image 'mcr.microsoft.com/playwright:v1.22.0-focal'
