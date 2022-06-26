@@ -1,8 +1,8 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const bml = require('../qa.config.js');
-const testIds = require('../qa.testids');
-const validations = require('../util/validations');
+const bml = require('./qa.config.js');
+const testIds = require('./qa.testids');
+const validations = require('./util/validations');
 
 test.describe('Login Page Tests', () => {
 
