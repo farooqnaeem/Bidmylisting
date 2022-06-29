@@ -1,4 +1,4 @@
 
 module.exports = {
-  url: 'http://dev.bidmylisting.io'
+  url: 'http://ci.bidmylisting.io'
 };

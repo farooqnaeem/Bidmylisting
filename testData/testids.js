@@ -8,14 +8,14 @@
 module.exports = {
   login: {
     emailLabel: 'text="Email"',
-    emailInput: 'input[name="username"]',
+    emailInput: 'data-testid=signin-email-field',
     pwdLabel: 'text="Password"',
-    pwdInput: 'input[name="password"]',
+    pwdInput: 'data-testid=signin-password-field',
     showHide: 'button[aria-label="toggle password visibility"]',
     rememberMe: 'input[type="checkbox"]',
     forgotPwdLink: 'text=Forgot Password',
     forgotPwdDlg: '.MuiDialog-paper',
-    submitBtn: 'button[type="submit"]',
+    submitBtn: 'data-testid=signin-submit',
     createAccount: 'button >> text=Create Account',
     createAgent: 'li >> text="I am an agent"',
     createSeller: 'li >> text="I am a homeowner"'
