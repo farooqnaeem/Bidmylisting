@@ -6,7 +6,7 @@ const bml = require('../qa.config.js');
 // import { test, expect } from '@playwright/test';
 
 test('BidMyListing Homepage', async ({ page, browserName }) => {
-  await page.goto(bml.url);
+  await page.goto(bml.url.dev);
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/BidMyListing/);

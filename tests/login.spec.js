@@ -8,7 +8,7 @@ const validations = require('../util/validations');
 test.describe('Login Page Tests', () => {
 
   test.beforeEach(async ({ page, browserName }) => {
-    await page.goto(bml.url + '/signin');
+    await page.goto(bml.url.dev + '/signin');
   });
 
   test('Login', async ({ page }) => {
