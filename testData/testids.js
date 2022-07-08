@@ -6,6 +6,12 @@
 */
 
 module.exports = {
+  homepage: {
+    signin:             'data-testid=homepage-header-sign-in',
+    homeownerRegister:  'data-testid=homepage-seller-register-link',
+    agentRegister:      'data-testid=homepage-agent-register-link'
+  },
+
   login: {
     emailLabel: 'text="Email"',
     emailInput: 'data-testid=signin-email-field',
@@ -19,6 +25,28 @@ module.exports = {
     createAccount: 'button >> text=Create Account',
     createAgent: 'li >> text="I am an agent"',
     createSeller: 'li >> text="I am a homeowner"'
+  },
+
+  homeownerRegistration: {
+    address:        'data-testid=homeowner-registration-step-1-address',
+    nextButton:     'data-testid=step-layout-continue',
+    // need element to validate correct address is displayed 
+    listingAgentYes:'data-testid=homeowner-registration-step-3-option-Yes',
+    listingAgentNo: 'data-testid=homeowner-registration-step-3-option-No',
+    whenToSellASAP: 'data-testid="homeowner-registration-step-4-option-asap',
+    whenToSell24:   'homeowner-registration-step-4-option-between_two_and_four_weeks',
+    whenToSell46:   'data-testid="homeowner-registration-step-4-option-between_four_and_six_weeks',
+    whenToSell6plus:'data-testid=homeowner-registration-step-4-option-more_than_six_weeks',
+    whenToSellBrowsing:'data-testid=homeowner-registration-step-4-option-browsing',
+    buyingHomeYes:  'data-testid=homeowner-registration-step-5-option-true',
+    buyingHomeNo:   'data-testid=homeowner-registration-step-5-option-false',
+    firstName:      'data-testid=homeowner-registration-step-6-first-name',
+    lastName:       'data-testid=homeowner-registration-step-6-last-name',
+    emailInput:     'data-testid=homeowner-registration-step-6-email',
+    emailInputConf: 'data-testid=homeowner-registration-step-6-email-repeat',
+    phoneNumber:    'data-testid=homeowner-registration-step-6-phone',
+    password:       'data-testid=homeowner-registration-step-6-password',
+    termCheckbox:   'data-testid=homeowner-registration-step-6-agree-terms'
   },
 
   // TODO
