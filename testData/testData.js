@@ -1,3 +1,4 @@
+const myDate = Date.now();
 
 module.exports = {
     homeowner: {
@@ -6,10 +7,14 @@ module.exports = {
     },
 
     homeownerRegistration: {
-      address:  '219 Corral Ave, Soldotna, AK 99669',
+      address:    '219 Corral Ave, Soldotna, AK 99669, USA',
       firstName:  'QA',
       lastName:   'Test',
-      email:      'qa+ho-' + Date.now() + '@bidmylisting.com',
+      email:      'qa+ho-' + myDate + '@bidmylisting.com',
+      phone:      '7144444444',
+      password:   'Homeowner2022!',
+      homePrice:  '200000',
+      description:'Bring me some buyers...'
 
     }
   };

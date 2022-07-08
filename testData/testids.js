@@ -31,10 +31,11 @@ module.exports = {
     address:        'data-testid=homeowner-registration-step-1-address',
     nextButton:     'data-testid=step-layout-continue',
     // need element to validate correct address is displayed 
+    enteredAddress: 'data-testid=homeowner-registration-step-2-address',
     listingAgentYes:'data-testid=homeowner-registration-step-3-option-Yes',
     listingAgentNo: 'data-testid=homeowner-registration-step-3-option-No',
-    whenToSellASAP: 'data-testid="homeowner-registration-step-4-option-asap',
-    whenToSell24:   'homeowner-registration-step-4-option-between_two_and_four_weeks',
+    whenToSellASAP: 'data-testid=homeowner-registration-step-4-option-asap',
+    whenToSell24:   'data-testid=homeowner-registration-step-4-option-between_two_and_four_weeks',
     whenToSell46:   'data-testid="homeowner-registration-step-4-option-between_four_and_six_weeks',
     whenToSell6plus:'data-testid=homeowner-registration-step-4-option-more_than_six_weeks',
     whenToSellBrowsing:'data-testid=homeowner-registration-step-4-option-browsing',
@@ -46,7 +47,9 @@ module.exports = {
     emailInputConf: 'data-testid=homeowner-registration-step-6-email-repeat',
     phoneNumber:    'data-testid=homeowner-registration-step-6-phone',
     password:       'data-testid=homeowner-registration-step-6-password',
-    termCheckbox:   'data-testid=homeowner-registration-step-6-agree-terms'
+    termCheckbox:   'data-testid=homeowner-registration-step-6-agree-terms',
+    homePrice:      'data-testid=homeowner-registration-step-7-price',
+    
   },
 
   // TODO
