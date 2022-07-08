@@ -12,6 +12,7 @@ test.describe('Login Page Tests', () => {
   });
 
   test('Login', async ({ page }) => {
+    // await page.goto(bml.url.dev);
     await page.locator(testIds.homepage.signin).click();
     await page.locator(testIds.login.emailInput).fill(testData.homeowner.email);
     await page.locator(testIds.login.pwdInput).fill(testData.homeowner.password);
