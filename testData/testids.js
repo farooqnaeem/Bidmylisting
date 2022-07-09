@@ -49,7 +49,38 @@ module.exports = {
     password:       'data-testid=homeowner-registration-step-6-password',
     termCheckbox:   'data-testid=homeowner-registration-step-6-agree-terms',
     homePrice:      'data-testid=homeowner-registration-step-7-price',
-    
+    homeNeedWork:   'data-testid=homeowner-registration-step-8-condition-0',
+    homeFair:       'data-testid=homeowner-registration-step-8-condition-1',
+    homeGood:       'data-testid=homeowner-registration-step-8-condition-2',
+    homeVeryGood:   'data-testid=homeowner-registration-step-8-condition-3',
+    homeExcellent:  'data-testid=homeowner-registration-step-8-condition-4',
+    description:    'data-testid=homeowner-registration-step-8-description'
+  },
+
+  agentRegistration: {
+    firstName:      'data-testid=agent-registration-step-1-first-name',
+    lastName:       'data-testid=agent-registration-step-1-last-name',
+    email:          'data-testid=agent-registration-step-1-email',
+    emailConf:      'data-testid=agent-registration-step-1-email-repeat',
+    phoneNumber:    'data-testid=agent-registration-step-1-phone',
+    zipcode:        'input[name="zip"]',
+    password:       'data-testid=agent-registration-step-1-password',
+    termCheckbox:   'input[type="checkbox"]',
+    createBtn:      'data-testid=agent-registration-step-1-submit',
+    skipPhoneVer:   'data-testid=step-layout-skip',
+    brokerage:      'data-testid=agent-registration-step-3-brokerage-name',
+    license:        'data-testid=agent-registration-step-3-license',
+    state:          'data-testid=agent-registration-step-3-brokerage-name',
+    address:        'data-testid=agent-registration-step-3-brokerage-address',
+    submitBtn:      'data-testid=agent-registration-step-3-submit',
+    nameCard:       'data-testid=agent-registration-step-4-card-name',
+    cardNumber:     'input[name="cardnumber"]',
+    // cardNumber:     'data-testid=agent-registration-step-4-card-container',
+    expDate:        'input[name="exp-date"]',
+    //expDate:        'data-testid=agent-registration-step-4-expiry-container',
+    cvc:            'data-testid=agent-registration-step-4-cvc-container',
+    finishBtn:      'data-testid=step-layout-continue'
+
   },
 
   // TODO
