@@ -1,9 +1,6 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const bml = require('../qa.config.js');
-
-
-// import { test, expect } from '@playwright/test';
+const bml = require('../../qa.config.js');
 
 test.describe('Homepage', () => {
 //test('BidMyListing Homepage', async ({ page, browserName }) => {
@@ -18,9 +15,6 @@ test.describe('Homepage', () => {
   await page.screenshot({ path: 'screenshots/homepage-'+browserName+'.png', fullPage: true });
 
   });
-
-
-
 });
 
 

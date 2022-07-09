@@ -23,6 +23,8 @@ module.exports = {
       email:      'qa+agent-' + myDate + '@bidmylisting.com',
       phone:      '9498888888',
       password:   'Agent2022!',
-      zipcode:    '99669'
+      zipcode:    '99669',
+      license:    '12345678',
+      brokerage:  'QA Brokerage'
     }
   };

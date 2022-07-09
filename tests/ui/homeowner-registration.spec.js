@@ -1,8 +1,8 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const bml = require('../qa.config.js');
-const testIds = require('../testData/testids.js');
-const testData = require('../testData/testData.js');
+const bml = require('../../qa.config.js');
+const testIds = require('../../testData/testids.js');
+const testData = require('../../testData/testData.js');
 
 test.describe('Homeowner Registration Tests', () => {
 
