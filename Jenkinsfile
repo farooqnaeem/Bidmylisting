@@ -26,20 +26,22 @@ pipeline {
     }
     stage('test') {
       steps {
-        if [[ $ENV = 'ci' ]]; then
-          sh '''
-            npx playwright test api
-          '''
-        elif [[ $ENV = 'qa' ]]; then
-          sh '''
-            npx playwright test --list
-            npx playwright test
-          '''
-        elif [[ $ENV = 'prod' ]]; then
-          sh '''
-            npx playwright test --list
-          '''
-        fi 
+        sh '''
+          if [[ $ENV = 'ci' ]]; then
+            sh '''
+              npx playwright test api
+            '''
+          elif [[ $ENV = 'qa' ]]; then
+            sh '''
+              npx playwright test --list
+              npx playwright test
+            '''
+          elif [[ $ENV = 'prod' ]]; then
+            sh '''
+              npx playwright test --list
+            '''
+          fi 
+        '''
       }
       post {
         success {
@@ -57,7 +59,12 @@ pipeline {
             reportName: 'Playwright Report',
             reportTitles: ''
           ])
+          
         }
+        
+        failure {  
+          mail bcc: '', body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "jason@bidmylisting.com";  
+        } 
 
 
 
