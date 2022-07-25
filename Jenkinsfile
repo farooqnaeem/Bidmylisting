@@ -21,16 +21,16 @@ pipeline {
     }
     stage('test') {
       steps {
-
-        if [ $ENV = 'ci' ]; then
-          sh '''npx playwright test api'''
-        elif [ $ENV = 'qa' ]; then
-          sh '''
+        sh '''
+          if [ $ENV = 'ci' ]; then
+            npx playwright test api
+          elif [ $ENV = 'qa' ]; then
             npx playwright test --list
-            npx playwright test'''
-        elif [ $ENV = 'prod' ]; then
-          sh '''npx playwright test --list'''
-        fi 
+            npx playwright test
+          elif [ $ENV = 'prod' ]]; then
+            npx playwright test --list
+          fi 
+        '''
 
       }
       post {
