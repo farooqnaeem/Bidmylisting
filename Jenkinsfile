@@ -28,18 +28,12 @@ pipeline {
       steps {
         sh '''
           if [[ $ENV = 'ci' ]]; then
-            sh '''
-              npx playwright test api
-            '''
+            sh 'npx playwright test api'
           elif [[ $ENV = 'qa' ]]; then
-            sh '''
-              npx playwright test --list
-              npx playwright test
-            '''
+            sh 'npx playwright test --list'
+            sh 'npx playwright test'
           elif [[ $ENV = 'prod' ]]; then
-            sh '''
-              npx playwright test --list
-            '''
+            sh 'npx playwright test --list'
           fi 
         '''
       }
