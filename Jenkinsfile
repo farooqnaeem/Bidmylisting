@@ -19,14 +19,9 @@ pipeline {
         '''
       }
     }
-    stage('help') {
-      steps {
-        sh 'npx playwright test --help'
-      }
-    }
     stage('test') {
       steps {
-        sh '''
+        bash '''
           if [[ $ENV = 'ci' ]]; then
             sh 'npx playwright test api'
           elif [[ $ENV = 'qa' ]]; then
