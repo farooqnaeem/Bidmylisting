@@ -23,11 +23,11 @@ pipeline {
       steps {
         sh '''
           if [ $ENV = 'ci' ]; then
-            npx playwright test ui/login.spec --config=playwright.ci.config.js
+            npx playwright test ui/login.spec
           elif [ $ENV = 'qa' ]; then
             npx playwright test ui --config=playwright.qa.config.js
           elif [ $ENV = 'prod' ]; then
-            npx playwright test --list
+            npx playwright test --list --config=playwright.prod.config.js
           fi 
         '''
 
@@ -52,7 +52,8 @@ pipeline {
         }
         
         failure {  
-          mail bcc: '', body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "jason@bidmylisting.com";  
+          echo "not looking good..."
+          // mail bcc: '', body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "jason@bidmylisting.com";  
         } 
 
 
