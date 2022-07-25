@@ -12,6 +12,7 @@ const { devices } = require('@playwright/test');
  * @see https://playwright.dev/docs/test-configuration
  * @type {import('@playwright/test').PlaywrightTestConfig}
  */
+
 const config = {
   testDir: './tests',
 
@@ -40,6 +41,8 @@ const config = {
     actionTimeout: 0,
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',
+    // baseURL: process.env.STAGING === '1' ? 'https://google.com' : 'https://www.bidmylisting.com/',
+    baseURL: 'https://ci.bidmylisting.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
