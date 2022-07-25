@@ -1,13 +1,12 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const bml = require('../../qa.config.js');
 const testIds = require('../../testData/testids.js');
 const testData = require('../../testData/testData.js');
 
 test.describe('Homeowner Registration Tests', () => {
 
   test.beforeEach(async ({ page }) => {
-    await page.goto(bml.url.dev);
+    await page.goto('/');
   });
 
   test('Registration', async ({ page }) => {

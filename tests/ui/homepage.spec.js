@@ -5,7 +5,7 @@ const bml = require('../../qa.config.js');
 test.describe('Homepage', () => {
 //test('BidMyListing Homepage', async ({ page, browserName }) => {
   test.beforeEach(async ({ page }) => {
-    await page.goto(bml.url.dev);
+    await page.goto('/');
   });
 
   test('Homepage', async ({ page, browserName }) => {

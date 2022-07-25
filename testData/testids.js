@@ -10,6 +10,7 @@ module.exports = {
     signin:             'data-testid=homepage-header-sign-in',
     homeownerRegister:  'data-testid=homepage-seller-register-link',
     agentRegister:      'data-testid=homepage-agent-register-link'
+
   },
 
   login: {
@@ -24,7 +25,8 @@ module.exports = {
     submitBtn: 'data-testid=signin-submit',
     createAccount: 'button >> text=Create Account',
     createAgent: 'li >> text="I am an agent"',
-    createSeller: 'li >> text="I am a homeowner"'
+    createSeller: 'li >> text="I am a homeowner"',
+    logoutBtn:             '//*[@id="root"]/div/div/div[1]/div[3]/div[2]/div/div[2]/span/div/div[1]/span/svg'
   },
 
   homeownerRegistration: {

@@ -7,8 +7,9 @@ const validations = require('../../util/validations');
 
 test.describe('Login Page Tests', () => {
 
-  test.beforeEach(async ({ page, browserName }) => {
-    await page.goto(bml.url.dev);
+  test.beforeEach(async ({ page }) => {
+    // await page.goto(bml.url.dev);
+    await page.goto('/');
   });
 
   test('Login', async ({ page }) => {
@@ -17,6 +18,9 @@ test.describe('Login Page Tests', () => {
     await page.locator(testIds.login.emailInput).fill(testData.homeowner.email);
     await page.locator(testIds.login.pwdInput).fill(testData.homeowner.password);
     await page.locator(testIds.login.submitBtn).click();
+
+    // validate after login, check for logout button
+
 
   });
 

@@ -23,11 +23,10 @@ pipeline {
       steps {
         sh '''
           if [ $ENV = 'ci' ]; then
-            npx playwright test api
+            npx playwright test ui/login.spec --config=playwright.ci.config.js
           elif [ $ENV = 'qa' ]; then
-            npx playwright test --list
-            npx playwright test
-          elif [ $ENV = 'prod' ]]; then
+            npx playwright test ui --config=playwright.qa.config.js
+          elif [ $ENV = 'prod' ]; then
             npx playwright test --list
           fi 
         '''
