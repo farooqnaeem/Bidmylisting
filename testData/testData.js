@@ -25,6 +25,7 @@ module.exports = {
       password:   'Agent2022!',
       zipcode:    '99669',
       license:    '12345678',
-      brokerage:  'QA Brokerage'
+      brokerage:  'QA Brokerage',
+      cardNumber: '4242424242424242'
     }
   };

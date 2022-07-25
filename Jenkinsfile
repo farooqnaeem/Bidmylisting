@@ -1,6 +1,9 @@
 pipeline {
   parameters {
-      choice(name: 'Environment', choices: ['dev', 'qa', 'prod'], description: 'Select environment to run automated tests')
+    choice(name: 'Environment', choices: ['ci', 'qa', 'prod'], description: 'Select environment to run automated tests')
+  }
+  environment {
+    ENV = "{$params.Environment}"
   }
   agent { 
     docker { 
@@ -23,10 +26,20 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh '''
-          npx playwright test --list
-          npx playwright test
-        '''
+        if [[ $ENV = 'ci' ]]; then
+          sh '''
+            npx playwright test api
+          '''
+        elif [[ $ENV = 'qa' ]]; then
+          sh '''
+            npx playwright test --list
+            npx playwright test
+          '''
+        elif [[ $ENV = 'prod' ]]; then
+          sh '''
+            npx playwright test --list
+          '''
+        fi 
       }
       post {
         success {
