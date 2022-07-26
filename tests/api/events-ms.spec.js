@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const bml = require('../../qa.config.js');
-const baseUrl = bml.url.eventsMS;
+const config = require('../../playwright.config.js');
+const apiUrl = config.api.listingMsUrl;
 
 /* Endpoints under test
   createEvent   PUT /bml/v1/event
@@ -11,10 +11,10 @@ const baseUrl = bml.url.eventsMS;
   aggregateEvents POST /bml/v1/event/aggregate
 */
 
-test.describe('Events Microservice API Tests', () => {
+test.describe('Events Microservice API Tests - ' + apiUrl, () => {
 
   test('Verify service', async ({ request }) => {
-    const info = await request.get(baseUrl + '/info');
+    const info = await request.get(apiUrl + '/info');
     expect(info.ok()).toBeTruthy();
     
     const json = await info.json();
