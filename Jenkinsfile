@@ -23,10 +23,13 @@ pipeline {
       steps {
         sh '''
           if [ $ENV = 'ci' ]; then
+            echo "BML_ENV=CI" > .env
             npx playwright test ui/login.spec
           elif [ $ENV = 'qa' ]; then
+            echo "BML_ENV=QA" > .env
             npx playwright test ui --config=playwright.qa.config.js
           elif [ $ENV = 'prod' ]; then
+            echo "BML_ENV=PROD" > .env
             npx playwright test --list --config=playwright.prod.config.js
           fi 
         '''
