@@ -1,19 +1,18 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 const config = require('../../playwright.config.js');
-const apiUrl = config.api.eventsMsUrl;
+const apiUrl = config.api.notificationMsUrl;
 
 /* Endpoints under test
-  createEvent   PUT /bml/v1/event
-  getEvent      GET /bml/v1/event/:id
-  findEvent     GET /bml/v1/event
-  queryEvents   POST /bml/v1/event/query
-  aggregateEvents POST /bml/v1/event/aggregate
+  getUserSettings GET /bml/v1/settings/user/:userId
+  setUserSettings PUT /bml/v1/settings/user/:userId
+  sendEmail       POST /bml/v1/email
+  sendSMS         POST /bml/v1/sms
 */
 
-test.describe('Events Microservice API Tests - ' + apiUrl, () => {
+test.describe('Notification Microservice API Tests - ' + apiUrl, () => {
 
-  test('Verify service', async ({ request }) =>  {
+  test('Verify service', async ({ request }) => {
     const info = await request.get(apiUrl + '/info');
     expect(info.ok()).toBeTruthy();
     

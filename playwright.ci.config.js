@@ -40,7 +40,8 @@ const config = {
   api: {
     url: 'https://api.ci.bidmylisting.io',
     listingMsUrl: 'https://listing.ms.ci.bidmylisting.io',
-    eventsMsUrl: 'https://events.ms.ci.bidmylisting.io'
+    eventsMsUrl: 'https://events.ms.ci.bidmylisting.io',
+    notificationMsUrl: 'https://notifications.ms.ci.bidmylisting.io'
   },
 
   /* Configure projects for major browsers */

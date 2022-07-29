@@ -22,7 +22,8 @@ const config = {
   api: {
     url: 'https://api.qa.bidmylisting.io',
     listingMsUrl: 'https://listing.ms.qa.bidmylisting.io',
-    eventsMsUrl: 'https://events.ms.qa.bidmylisting.io'
+    eventsMsUrl: 'https://events.ms.qa.bidmylisting.io',
+    notificationMsUrl: 'https://notifications.ms.qa.bidmylisting.io'
   },
 
   projects: [
