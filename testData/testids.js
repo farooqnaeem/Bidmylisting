@@ -10,7 +10,6 @@ module.exports = {
     signin:             'data-testid=homepage-header-sign-in',
     homeownerRegister:  'data-testid=homepage-seller-register-link',
     agentRegister:      'data-testid=homepage-agent-register-link'
-
   },
 
   login: {
@@ -92,4 +91,23 @@ module.exports = {
   // TODO
   preLoginHeader: {
   },
+
+  marketingFunnel: {
+    getStarted: {
+      email:        'id=email-7adec560-5417-408e-9ded-543b8710653e',
+      zip:          'id=zip-7adec560-5417-408e-9ded-543b8710653e',
+      firstName:     'id=firstname-7adec560-5417-408e-9ded-543b8710653e',
+      lastName:     'id=lastname-7adec560-5417-408e-9ded-543b8710653e',
+      phoneNumber:  'id=phone-7adec560-5417-408e-9ded-543b8710653e',
+      submit:       'input[type="submit"]'
+    },
+    recruitmentOptin: {
+      registerBtn1: '#tmp_button-32469 >> a',
+      registerBtn2: 'id=undefined-776-702',
+      registerBtn3: 'id=undefined-776-100',
+      registerBtn4: 'id=undefined-776-219',
+      formDiv:      '#modalPopup',
+      closeBtn:     '#modalPopup > div.closeLPModal > img'
+    }
+  }
 };

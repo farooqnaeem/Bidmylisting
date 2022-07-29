@@ -2,6 +2,7 @@
 const { test, expect } = require('@playwright/test');
 const testIds = require('../../testData/testids.js');
 const testData = require('../../testData/testData.js');
+const common = require('../../util/common.js');
 
 test.describe('Homeowner Registration Tests', () => {
 
@@ -12,17 +13,12 @@ test.describe('Homeowner Registration Tests', () => {
   test('Registration', async ({ page }) => {
     await page.locator(testIds.homepage.homeownerRegister).click();
 
-    // Enter address
-    await page.waitForSelector(testIds.homeownerRegistration.address);
-    await page.waitForTimeout(1000);
-    await page.keyboard.press('Tab');
-    await page.waitForTimeout(1000);
-    await page.keyboard.type(testData.homeownerRegistration.address);
-    await page.waitForTimeout(1000);
-    await page.keyboard.press('ArrowDown');
-    await page.waitForTimeout(1000);
-    await page.keyboard.press('Enter');
+    // page 1 - /registration/homeowner/address-lookup
+    await common.testHomeownerRegistrationAddressLookup(page);
     await page.locator(testIds.homeownerRegistration.nextButton).click();
+
+    // page 2 - /registration/homeowner/property-information
+    await expect(page).toHaveURL('/registration/homeowner/property-information');
 
     // Verify entered address is correct
     await expect(page.locator(testIds.homeownerRegistration.enteredAddress)).toHaveText(testData.homeownerRegistration.address);
