@@ -29,7 +29,7 @@ pipeline {
           elif [ $ENV = 'qa' ]; then
             echo "BML_ENV=QA" > .env
             cat .env
-            npx playwright test ui --config=playwright.qa.config.js
+            npx playwright test tests/ui --config=playwright.qa.config.js
           elif [ $ENV = 'prod' ]; then
             echo "BML_ENV=PROD" > .env
             cat .env
