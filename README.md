@@ -22,5 +22,4 @@ npx playwright test --headed
 ## Project structure
 - **/tests** - location for all our tests, ideally one spec per page, feature, or component
 - **/util** - location of utility functions
-- **qa.config.js** - where we will keep our environment specific configs
 - **qa.testids.js** - where we store the data-test-id values

@@ -25,8 +25,7 @@ module.exports = {
     submitBtn: 'data-testid=signin-submit',
     createAccount: 'button >> text=Create Account',
     createAgent: 'li >> text="I am an agent"',
-    createSeller: 'li >> text="I am a homeowner"',
-    logoutBtn:             '//*[@id="root"]/div/div/div[1]/div[3]/div[2]/div/div[2]/span/div/div[1]/span/svg'
+    createSeller: 'li >> text="I am a homeowner"'
   },
 
   homeownerRegistration: {
