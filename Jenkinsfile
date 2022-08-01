@@ -25,7 +25,7 @@ pipeline {
           if [ $ENV = 'ci' ]; then
             echo "BML_ENV=CI" > .env
             cat .env
-            npx playwright test ui/login.spec
+            npx playwright test ui/login.spec --config=playwright.ci.config.js
           elif [ $ENV = 'qa' ]; then
             echo "BML_ENV=QA" > .env
             cat .env
