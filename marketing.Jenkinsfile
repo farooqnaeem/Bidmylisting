@@ -22,9 +22,9 @@ pipeline {
     stage('test') {
       steps {
         sh '''
-            echo "BML_ENV=PROD" > .env
+            echo "BML_ENV=CI" > .env
             cat .env
-            npx playwright test ui/marketing-funnel --config=playwright.prod.config.js --project=chromium --workers=1
+            npx playwright test ui/marketing-funnel --config=playwright.ci.config.js --project=chromium --workers=1
         '''
 
       }
