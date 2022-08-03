@@ -22,7 +22,7 @@ pipeline {
     stage('test') {
       steps {
         sh '''
-            npx playwright test ui/marketing-funnel --config=playwright.prod.config.js
+            npx playwright test ui/marketing-funnel --config=playwright.prod.config.js --project=chromium
         '''
 
       }
