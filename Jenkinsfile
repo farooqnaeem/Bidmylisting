@@ -25,15 +25,15 @@ pipeline {
           if [ $ENV = 'ci' ]; then
             echo "BML_ENV=CI" > .env
             cat .env
-            npx playwright test ui/login.spec --config=playwright.ci.config.js
+            npx playwright test ui/login.spec --config=playwright.ci.config.js --project=chromium --workers=1
           elif [ $ENV = 'qa' ]; then
             echo "BML_ENV=QA" > .env
             cat .env
-            npx playwright test tests/ui --config=playwright.qa.config.js
+            npx playwright test tests/ui --config=playwright.qa.config.js --project=chromium --workers=1
           elif [ $ENV = 'prod' ]; then
             echo "BML_ENV=PROD" > .env
             cat .env
-            npx playwright test --list --config=playwright.prod.config.js
+            npx playwright test --list --config=playwright.prod.config.js --project=chromium --workers=1
           fi 
         '''
 
