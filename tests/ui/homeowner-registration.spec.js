@@ -33,6 +33,9 @@ test.describe('Homeowner Registration Tests', () => {
     await page.locator(testIds.homeownerRegistration.whenToSellBrowsing).click();
     // await page.locator(testIds.homeownerRegistration.nextButton).click();
 
+    // Condition of home ?
+    await page.locator(testIds.homeownerRegistration.tearDown).click();
+
     // Buying home ?
     await page.locator(testIds.homeownerRegistration.buyingHomeNo).click();
     // await page.locator(testIds.homeownerRegistration.nextButton).click();
@@ -53,11 +56,20 @@ test.describe('Homeowner Registration Tests', () => {
     await page.locator(testIds.homeownerRegistration.nextButton).click();
 
     // Condition ?
-    await page.locator(testIds.homeownerRegistration.homeVeryGood).click();
+    // await page.locator(testIds.homeownerRegistration.homeVeryGood).click();
     await page.locator(testIds.homeownerRegistration.description).fill(testData.homeownerRegistration.description);
+    await page.locator(testIds.homeownerRegistration.checkbox).click();
     await page.locator(testIds.homeownerRegistration.nextButton).click();
 
-    // TODO: Verify Pending Approval status text or something else on Dashboard to validate registration completion
+    // Confirmation checklist
+    await page.locator(testIds.homeownerRegistration.notAgent).click();
+    await page.locator(testIds.homeownerRegistration.homeowner).click();
+    await page.locator(testIds.homeownerRegistration.notOffer).click();
+    await page.locator(testIds.homeownerRegistration.agreementCheckbox).click();
+    await page.locator(testIds.homeownerRegistration.confirmChecklist).click();
+
+    // TODO: Verify homeowner name and property address
+    await page.screenshot({ path: 'screenshots/homeowner.png', fullPage: true });
 
   });
 

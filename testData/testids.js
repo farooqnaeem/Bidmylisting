@@ -34,6 +34,8 @@ module.exports = {
     enteredAddress: 'data-testid=homeowner-registration-step-2-address',
     listingAgentYes:'data-testid=homeowner-registration-step-3-option-Yes',
     listingAgentNo: 'data-testid=homeowner-registration-step-3-option-No',
+    fairCondition:  'id=property-condition-fair',
+    tearDown:       'data-testid=homeowner-registration-step-3-agent-contract-remaining-time-option-needs_work',
     whenToSellASAP: 'data-testid=homeowner-registration-step-4-option-asap',
     whenToSell24:   'data-testid=homeowner-registration-step-4-option-between_two_and_four_weeks',
     whenToSell46:   'data-testid="homeowner-registration-step-4-option-between_four_and_six_weeks',
@@ -54,7 +56,13 @@ module.exports = {
     homeGood:       'data-testid=homeowner-registration-step-8-condition-2',
     homeVeryGood:   'data-testid=homeowner-registration-step-8-condition-3',
     homeExcellent:  'data-testid=homeowner-registration-step-8-condition-4',
-    description:    'data-testid=homeowner-registration-step-8-description'
+    description:    'data-testid=homeowner-registration-step-9-description',
+    checkbox:       'data-testid=homeowner-registration-step-9-ready-for-publish-checkbox',
+    notAgent:       'data-testid=62d045a70c254908f7b0326c-checkbox',
+    homeowner:      'data-testid=62d045b10c254908f7b0326d-checkbox',
+    notOffer:       'data-testid=62d045bd0c254908f7b0326e-checkbox',
+    agreementCheckbox:  'data-testid=agreement-checkbox',
+    confirmChecklist:   'data-testid=confirmation-checklist-dialog-primary-action'
   },
 
   agentRegistration: {

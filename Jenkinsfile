@@ -25,11 +25,20 @@ pipeline {
           if [ $ENV = 'ci' ]; then
             echo "BML_ENV=CI" > .env
             cat .env
+            npx playwright test api --config=playwright.ci.config.js --project=chromium --workers=1
             npx playwright test ui/login.spec --config=playwright.ci.config.js --project=chromium --workers=1
+            npx playwright test ui/agent-registration.spec --config=playwright.ci.config.js --project=chromium --workers=1
+            npx playwright test ui/homeowner-registration.spec --config=playwright.ci.config.js --project=chromium --workers=1
+            npx playwright test ui/homepage.spec --config=playwright.ci.config.js --project=chromium --workers=1
+            npx playwright test ui/marketing-funnel.spec --config=playwright.ci.config.js --project=chromium --workers=1
           elif [ $ENV = 'qa' ]; then
             echo "BML_ENV=QA" > .env
             cat .env
-            npx playwright test tests/ui --config=playwright.qa.config.js --project=chromium --workers=1
+            npx playwright test api --config=playwright.qa.config.js --project=chromium --workers=1
+            npx playwright test ui/agent-registration.spec --config=playwright.qa.config.js --project=chromium --workers=1
+            npx playwright test ui/homeowner-registration.spec --config=playwright.qa.config.js --project=chromium --workers=1
+            npx playwright test ui/homepage.spec --config=playwright.qa.config.js --project=chromium --workers=1
+            npx playwright test ui/marketing-funnel.spec --config=playwright.qa.config.js --project=chromium --workers=1
           elif [ $ENV = 'prod' ]; then
             echo "BML_ENV=PROD" > .env
             cat .env
