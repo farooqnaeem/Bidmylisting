@@ -4,8 +4,8 @@ pipeline {
   }
   environment {
     ENV = "${params.Environment}"
-    TESTMO_URL = credentials('https://bml.testmo.net/')
-    TESTMO_TOKEN = credentials('testmo_api_eyJpdiI6IkMwNmVLdXBlZ0k1czVVUGlIL3ozeGc9PSIsInZhbHVlIjoidmdJb0Y1Y2J4M1FWT29TUkJrNEhZV0g2bk5xSHJqdkpyOVRaQnhZdUczOD0iLCJtYWMiOiJmYzc0ZjZjOTAwMjQ1NDFiNmM2MmQ0YzI1ZTcwYmExNDAwMzI1NjFkODYxNzA0MWMwYjFlZmI0NDQzNjYzNjQ4IiwidGFnIjoiIn0=')    
+    TESTMO_URL = 'https://bml.testmo.net/'
+    TESTMO_TOKEN = 'testmo_api_eyJpdiI6IkMwNmVLdXBlZ0k1czVVUGlIL3ozeGc9PSIsInZhbHVlIjoidmdJb0Y1Y2J4M1FWT29TUkJrNEhZV0g2bk5xSHJqdkpyOVRaQnhZdUczOD0iLCJtYWMiOiJmYzc0ZjZjOTAwMjQ1NDFiNmM2MmQ0YzI1ZTcwYmExNDAwMzI1NjFkODYxNzA0MWMwYjFlZmI0NDQzNjYzNjQ4IiwidGFnIjoiIn0='
   }
   agent { 
     docker { 
