@@ -5,7 +5,7 @@ pipeline {
   environment {
     ENV = "${params.Environment}"
     TESTMO_URL = 'https://bml.testmo.net/'
-    TESTMO_TOKEN = 'testmo_api_eyJpdiI6IkMwNmVLdXBlZ0k1czVVUGlIL3ozeGc9PSIsInZhbHVlIjoidmdJb0Y1Y2J4M1FWT29TUkJrNEhZV0g2bk5xSHJqdkpyOVRaQnhZdUczOD0iLCJtYWMiOiJmYzc0ZjZjOTAwMjQ1NDFiNmM2MmQ0YzI1ZTcwYmExNDAwMzI1NjFkODYxNzA0MWMwYjFlZmI0NDQzNjYzNjQ4IiwidGFnIjoiIn0='
+    TESTMO_TOKEN = credentials('TESTMO_TOKEN')
   }
   agent { 
     docker { 
@@ -62,7 +62,7 @@ pipeline {
             alwaysLinkToLastBuild: true,
             keepAll: true,
             reportDir: 'playwright-report',
-            reportFiles: 'results.xml',
+            reportFiles: 'results.html',
             reportName: 'Playwright Report',
             reportTitles: ''
           ])
@@ -73,7 +73,7 @@ pipeline {
                 --project-id 1 \
                 --name "Automated test run" \
                 --resources resources.json \
-                --results playwright-report/*.xml \
+                --results playwright-report/*.html \
           '''
 
         }
