@@ -70,7 +70,7 @@ pipeline {
           archiveArtifacts(artifacts: '*.html', followSymlinks: false)
 
           sh '''
-            npx testmo automation:submit \
+            npx testmo submit \
                 --instance $TESTMO_URL \
                 --project-id 1 \
                 --name "Automated test run" \
