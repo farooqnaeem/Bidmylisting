@@ -67,6 +67,8 @@ pipeline {
             reportTitles: ''
           ])
 
+          archiveArtifacts(artifacts: '*.html', followSymlinks: false)
+
           sh '''
             npx testmo automation:submit \
                 --instance $TESTMO_URL \
