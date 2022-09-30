@@ -69,6 +69,8 @@ test.describe('Homeowner Registration Tests', () => {
     await page.locator(testIds.homeownerRegistration.confirmChecklist).click();
 
     // TODO: Verify homeowner name and property address
+    // https://bidmylisting.atlassian.net/browse/BID-1462
+    await page.waitForTimeout(5000);
     await page.screenshot({ path: 'screenshots/homeowner.png', fullPage: true });
 
   });

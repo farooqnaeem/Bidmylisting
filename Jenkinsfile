@@ -4,6 +4,8 @@ pipeline {
   }
   environment {
     ENV = "${params.Environment}"
+    TESTMO_URL = credentials('https://bml.testmo.net/')
+    TESTMO_TOKEN = credentials('testmo_api_eyJpdiI6IkMwNmVLdXBlZ0k1czVVUGlIL3ozeGc9PSIsInZhbHVlIjoidmdJb0Y1Y2J4M1FWT29TUkJrNEhZV0g2bk5xSHJqdkpyOVRaQnhZdUczOD0iLCJtYWMiOiJmYzc0ZjZjOTAwMjQ1NDFiNmM2MmQ0YzI1ZTcwYmExNDAwMzI1NjFkODYxNzA0MWMwYjFlZmI0NDQzNjYzNjQ4IiwidGFnIjoiIn0=')    
   }
   agent { 
     docker { 
@@ -16,6 +18,14 @@ pipeline {
         sh '''
           npm i -D @playwright/test
           npx playwright install
+        '''
+      }
+    }
+    stage('install testmo cli') {
+      steps {
+        sh '''
+          npm ci
+          npm install --no-save @testmo/testmo-cli
         '''
       }
     }
@@ -36,33 +46,41 @@ pipeline {
             cat .env
             npx playwright test api --config=playwright.qa.config.js --project=chromium --workers=1
             npx playwright test ui/agent-registration.spec --config=playwright.qa.config.js --project=chromium --workers=1
-            npx playwright test ui/homeowner-registration.spec --config=playwright.qa.config.js --project=chromium --workers=1
-            npx playwright test ui/homepage.spec --config=playwright.qa.config.js --project=chromium --workers=1
-            npx playwright test ui/marketing-funnel.spec --config=playwright.qa.config.js --project=chromium --workers=1
           elif [ $ENV = 'prod' ]; then
             echo "BML_ENV=PROD" > .env
             cat .env
             npx playwright test --list --config=playwright.prod.config.js --project=chromium --workers=1
           fi 
         '''
-
       }
+      
       post {
-        success {
-        //   archiveArtifacts(artifacts: '*.png', followSymlinks: false)
-          sh 'pwd'
-          sh 'ls -la'
-          
+        always {
           // publish html
           publishHTML([
             allowMissing: false,
             alwaysLinkToLastBuild: true,
             keepAll: true,
             reportDir: 'playwright-report',
-            reportFiles: 'index.html',
+            reportFiles: 'results.xml',
             reportName: 'Playwright Report',
             reportTitles: ''
           ])
+
+          sh '''
+            npx testmo automation:submit \
+                --instance $TESTMO_URL \
+                --project-id 1 \
+                --name "Automated test run" \
+                --resources resources.json \
+                --results playwright-report/*.xml \
+          '''
+
+        }
+        success {
+        //   archiveArtifacts(artifacts: '*.png', followSymlinks: false)
+          sh 'pwd'
+          sh 'ls -la'
           
         }
         
