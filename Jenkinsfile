@@ -72,7 +72,6 @@ pipeline {
                 --instance $TESTMO_URL \
                 --project-id 1 \
                 --name "Automated test run" \
-                --resources resources.json \
                 --results playwright-report/*.html \
           '''
 
