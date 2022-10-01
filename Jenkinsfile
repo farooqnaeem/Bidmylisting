@@ -67,14 +67,15 @@ pipeline {
             reportTitles: ''
           ])
 
-          archiveArtifacts(artifacts: '*.html', followSymlinks: false)
+          archiveArtifacts(artifacts: '*.xml', followSymlinks: false)
 
           sh '''
-            npx testmo submit \
+            npx testmo automation:run:submit \
                 --instance $TESTMO_URL \
                 --project-id 1 \
                 --name "Automated test run" \
-                --results playwright-report/*.html \
+                --source "backend-unit" \
+                --results playwright-report/*.html
           '''
 
         }
