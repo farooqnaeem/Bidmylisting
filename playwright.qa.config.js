@@ -11,7 +11,8 @@ const config = {
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: 'html',
+  // reporter: 'line',
+  reporter: [ ['junit', { outputFile: 'results.xml' }] ],
   use: {
     actionTimeout: 0,
     baseURL: 'https://qa.bidmylisting.io',

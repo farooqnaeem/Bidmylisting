@@ -73,8 +73,8 @@ pipeline {
             npx testmo automation:run:submit \
                 --instance $TESTMO_URL \
                 --project-id 1 \
-                --name "Automated test run" \
-                --source "backend-unit" \
+                --name $ENV \
+                --source "UI" \
                 --results playwright-report/*.html
           '''
 
