@@ -75,7 +75,7 @@ pipeline {
                 --project-id 1 \
                 --name $ENV \
                 --source "UI" \
-                --results playwright-report/*.html
+                --results *.xml
           '''
 
         }
