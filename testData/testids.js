@@ -27,44 +27,6 @@ module.exports = {
     createSeller: 'li >> text="I am a homeowner"'
   },
 
-  homeownerRegistration: {
-    address:        'data-testid=homeowner-registration-step-1-address',
-    nextButton:     'data-testid=step-layout-continue',
-    // need element to validate correct address is displayed 
-    enteredAddress: 'data-testid=homeowner-registration-step-2-address',
-    listingAgentYes:'data-testid=homeowner-registration-step-3-option-Yes',
-    listingAgentNo: 'data-testid=homeowner-registration-step-3-option-No',
-    fairCondition:  'id=property-condition-fair',
-    tearDown:       'data-testid=homeowner-registration-step-3-agent-contract-remaining-time-option-needs_work',
-    whenToSellASAP: 'data-testid=homeowner-registration-step-4-option-asap',
-    whenToSell24:   'data-testid=homeowner-registration-step-4-option-between_two_and_four_weeks',
-    whenToSell46:   'data-testid="homeowner-registration-step-4-option-between_four_and_six_weeks',
-    whenToSell6plus:'data-testid=homeowner-registration-step-4-option-more_than_six_weeks',
-    whenToSellBrowsing:'data-testid=homeowner-registration-step-4-option-browsing',
-    buyingHomeYes:  'data-testid=homeowner-registration-step-5-option-true',
-    buyingHomeNo:   'data-testid=homeowner-registration-step-5-option-false',
-    firstName:      'data-testid=homeowner-registration-step-6-first-name',
-    lastName:       'data-testid=homeowner-registration-step-6-last-name',
-    emailInput:     'data-testid=homeowner-registration-step-6-email',
-    emailInputConf: 'data-testid=homeowner-registration-step-6-email-repeat',
-    phoneNumber:    'data-testid=homeowner-registration-step-6-phone',
-    password:       'data-testid=homeowner-registration-step-6-password',
-    termCheckbox:   'data-testid=homeowner-registration-step-6-agree-terms',
-    homePrice:      'data-testid=homeowner-registration-step-7-price',
-    homeNeedWork:   'data-testid=homeowner-registration-step-8-condition-0',
-    homeFair:       'data-testid=homeowner-registration-step-8-condition-1',
-    homeGood:       'data-testid=homeowner-registration-step-8-condition-2',
-    homeVeryGood:   'data-testid=homeowner-registration-step-8-condition-3',
-    homeExcellent:  'data-testid=homeowner-registration-step-8-condition-4',
-    description:    'data-testid=homeowner-registration-step-9-description',
-    checkbox:       'data-testid=homeowner-registration-step-9-ready-for-publish-checkbox',
-    notAgent:       'data-testid=62d045a70c254908f7b0326c-checkbox',
-    homeowner:      'data-testid=62d045b10c254908f7b0326d-checkbox',
-    notOffer:       'data-testid=62d045bd0c254908f7b0326e-checkbox',
-    agreementCheckbox:  'data-testid=agreement-checkbox',
-    confirmChecklist:   'data-testid=confirmation-checklist-dialog-primary-action'
-  },
-
   agentRegistration: {
     firstName:      'data-testid=agent-registration-step-1-first-name',
     lastName:       'data-testid=agent-registration-step-1-last-name',
@@ -88,15 +50,51 @@ module.exports = {
     //expDate:        'data-testid=agent-registration-step-4-expiry-container',
     cvc:            'data-testid=agent-registration-step-4-cvc-container',
     finishBtn:      'data-testid=step-layout-continue'
-
   },
 
-  // TODO
-  preLoginFooter: {
+  
+  hoDashboard: {
+    newListingLink:       'data-testid=homeowner-right-menu-new-listing-link',
+    listingOptions:       'data-testid=homeowner-right-menu-open-select',
+    listingToggle:        'data-testid=homeowner-right-menu-selector-toggle-listing',
+    listingChoices:       'data-testid=homeowner-right-menu-selector-options',
+    viewDetailsBtn:       'data-testid=homeowner-right-menu-view-details-button',
+    editListingBtn:       'data-testid=homeowner-right-menu-edit-listing-button',
+    publishBtn:           'data-testid=homeowner-right-menu-publish-button',
+    publishDialog:        'data-testid=seller-publish-dialog',
+    publishDialogClose:   'data-testid=seller-publish-dialog-close',
+    publishDialogCancel:  'data-testid=seller-publish-dialog-secondary-action',
+    publishDialogActivate:'data-testid=seller-publish-dialog-primary-action'
   },
 
-  // TODO
-  preLoginHeader: {
+  navigation: {
+    hoHome:       'data-testid=sidenav-item-list-redirect-link-homeowner',
+    agentHome:    '',
+    bids:         '',
+    help:         'data-testid=sidenav-item-list-how-to-link',
+    signout:      'data-testid=sidenav-item-list-logout-link',
+    profile:      'data-testid=sidenav-item-list-account-settings-link'
+  },
+
+  newListing: {
+    addressInput:       'data-testid=listing-step1-address',
+    homeSizeInput:      'data-testid=',
+    bedsInput:          'data-testid=listing-step1-bedrooms',
+    bathsInput:         'data-testid=listing-step1-bathrooms',
+    conditionNeedsWork: 'data-testid=listing-step1-condition-0',
+    conditionFair:      'data-testid=listing-step1-condition-1',
+    conditionGood:      'data-testid=listing-step1-condition-2',
+    conditionVeryGood:  'data-testid=listing-step1-condition-3',
+    conditionExcellent: 'data-testid=listing-step1-condition-4',
+    step1Cancel:        'data-testid=listing-step1-cancel',
+    step1Submit:        'data-testid=listing-step1-submit',
+    priceInput:         'data-testid=listing-step2-price',
+    step2Back:          'data-testid=listing-step2-back-button',
+    step2Submit:        'data-testid=listing-step2-submit-button',
+    importantInfoInput: 'data-testid=listing-step3-importantInfo-input',
+    descriptionInput:   'data-testid=listing-step3-description-input',
+    step3Back:          'data-testid=listing-step3-back-button',
+    step3Submit:        'data-testid=listing-step3-submit-button'
   },
 
   marketingFunnel: {

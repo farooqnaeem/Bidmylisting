@@ -2,7 +2,7 @@
 const { test, expect } = require('@playwright/test');
 const testIds = require('../../testData/testids');
 const testData = require('../../testData/testData');
-const common = require('../../util/common');
+const common = require('../../testPages/common');
 
 test.describe('Agent Registration Tests', () => {
 
