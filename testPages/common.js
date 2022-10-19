@@ -3,22 +3,7 @@ const { expect } = require('@playwright/test');
 const testIds = require('../testData/testids.js');
 const testData = require('../testData/testData.js');
 
-async function testHomeownerRegistrationAddressLookup (page) {
-  await expect(page).toHaveURL('/registration/homeowner/address-lookup');
-  
-  // Enter address
-  await page.waitForSelector(testIds.homeownerRegistration.address);
-  await page.waitForTimeout(1000);
-  await page.keyboard.press('Tab');
-  await page.waitForTimeout(1000);
-  await page.keyboard.type(testData.homeownerRegistration.address);
-  await page.waitForTimeout(1000);
-  await page.keyboard.press('ArrowDown');
-  await page.waitForTimeout(1000);
-  await page.keyboard.press('Enter');
 
-  // TODO add tests for zip code input
-}
 
 async function testAgentCreateAccount(page) {
   await expect(page).toHaveURL('/registration/agent/create-account');
@@ -47,6 +32,5 @@ async function testAgentCreateAccount(page) {
 }
 
 module.exports = {
-  testHomeownerRegistrationAddressLookup,
   testAgentCreateAccount
 }
