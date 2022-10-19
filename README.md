@@ -20,6 +20,33 @@ npx playwright test --headed
 ```
 
 ## Project structure
-- **/tests** - location for all our tests, ideally one spec per page, feature, or component
-- **/util** - location of utility functions
-- **qa.testids.js** - where we store the data-test-id values
+- `/tests`
+  - Location for all our tests, ideally one spec per page, feature, or component
+  - `<feature>.spec.js`
+    - Playwright spec file containing a test suite around a feature.  Examples of "features" include dashboard, profile, search
+    - Example: `homeowner-registration.spec.js`
+    - There shouldn't be that much code in these files.  These specs should really only contain the skeleton code that calls the functions locaed in `/testPages/`
+  - Example: `/tests/ui/homeowner-registration.spec.js`
+
+- `/testPages/<user><feature>`
+  - Centralized location for all common functions, `data-testid`s, and test data used in a feature of the site
+  - `<user>` is a user type, such as homeowner or agent
+  - `<feature>` is a feature of the app, such as dashboard, profile, or search
+  - Example: `/testPages/homeowner/registration`
+
+  - In this directory we have the following files.  Please follow this convention:
+    - `index.js` - functions that run 
+    - `ids.js`
+    - `data.js`
+  
+
+- `/testUtils` 
+  - Contains utility functions such as calling the backend, parsing, etc.
+
+- `/testData` 
+  - *THIS FOLDER WILL BE REMOVED*, since test data will now be in `/testPages/<user>/<feature>/data.js`.
+
+
+- `/screenshots`
+  - Location of screenshots taken by Playwright during automation runs
+
