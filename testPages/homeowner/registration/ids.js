@@ -46,10 +46,11 @@ module.exports = {
     phoneNumber:    'data-testid=homeowner-registration-account-info-step-phone',
     password:       'data-testid=homeowner-registration-account-info-step-password',
     agreeCheckbox:  'data-testid=homeowner-registration-account-info-step-agree-terms',
+    agreeLink:      'data-testid=homeowner-registration-account-info-step-terms'
   },
   listingPrice:     'data-testid=homeowner-registration-property-price-step-price',
   photoUpload: {
-    image:          'data-testid=',
+    image:          'data-testid=property-photo-step-img',
     chooseFile:     'data-testid=draggable-uploader-button',
   },
   listingDescription: {
@@ -62,6 +63,7 @@ module.exports = {
     closeX:         'data-testid=confirmation-checklist-dialog-close',
     // don't use fixed data-testid for first 3 checkboxes b/c they are dynamic
     agreeCheckbox:  'data-testid=agreement-checkbox',
+    agreeLink:      'data-testid=activate-confirmation-dialog-user-agreement',
     cancel:         'data-testid=confirmation-checklist-dialog-secondary-action',
     confirm:        'data-testid=confirmation-checklist-dialog-primary-action'
   },
