@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect} = require('@playwright/test');
-const testIds = require('../../testData/testids.js');
 const homeReg = require('../../testPages/homeowner/registration');
+const urls = require('../../testUtils/urls');
 
 test.describe('Homeowner Registration Tests', () => {
 
@@ -11,7 +11,7 @@ test.describe('Homeowner Registration Tests', () => {
 
   test('Registration', async ({ page }, testInfo) => {
     testInfo.setTimeout(120000);
-    await page.locator(testIds.homepage.homeownerRegister).click();
+    await page.goto(urls.HOMEOWNER_REG_ADDRES_LOOKUP);
 
     // page 1
     await homeReg.addressLookup(page);

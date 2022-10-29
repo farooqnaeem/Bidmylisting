@@ -2,7 +2,6 @@
 const { test, expect } = require('@playwright/test');
 const bml = require('./qa.config.js');
 const testIds = require('./qa.testids');
-const validations = require('./util/validations');
 
 test.describe('Login Page Tests', () => {
 
@@ -31,23 +30,26 @@ test.describe('Login Page Tests', () => {
     //await expect(page.locator(testIds.login.createSeller)).toBeVisible();
 
     // header & footer
-    validations.validatePreLoginHeader();
-    validations.validatePreLoginFooter();
+    // TODO
   });
 
   test('Login - test page validations', async ({ page }) => {
+    // TODO
     test.fail();
   });
   
   test('Login - test Remember Me', async ({ page }) => {
+    // TODO
     test.fail();
   });
   
   test('Login - test Forgot Password', async ({ page }) => {
+    // TODO
     test.fail();
   });
   
   test('Login - test User Login', async ({ page }) => {
+    // TODO
     test.fail();
   });
 });

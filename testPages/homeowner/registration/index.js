@@ -2,19 +2,20 @@
 const { test, expect } = require('@playwright/test');
 const ids = require('./ids');
 const data = require('./data');
+const urls = require('../../../testUtils/urls');
 
 const pageURLs = [
   'dummy page',
-  '/registration/homeowner/address-lookup',
-  '/registration/homeowner/property-information',
-  '/registration/homeowner/working-with-an-agent',
-  '/registration/homeowner/selling-period',
-  '/registration/homeowner/property-condition',
-  '/registration/homeowner/buying-a-home',
-  '/registration/homeowner/account-info',
-  '/registration/homeowner/property-price',
-  '/registration/homeowner/property-photo',
-  '/registration/homeowner/listing-description'
+  urls.HOMEOWNER_REG_ADDRES_LOOKUP,
+  urls.HOMEOWNER_REG_PROPERTY_INFO,
+  urls.HOMEOWNER_REG_WORKING_WITH_AGENT,
+  urls.HOMEOWNER_REG_SELLING_PERIOD,
+  urls.HOMEOWNER_REG_PROPERTY_CONDITION,
+  urls.HOMEOWNER_REG_BUY_HOME,
+  urls.HOMEOWNER_REG_ACCOUNT_INFO,
+  urls.HOMEOWNER_REG_PROPERTY_PRICE,
+  urls.HOMEOWNER_REG_PROPERTY_PHOTO,
+  urls.HOMEOWNER_REG_LISTING_DESRIPTION
 ]
 
 // Note: this function is for happy path and it just fills in the form

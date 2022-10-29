@@ -28,7 +28,7 @@ npx playwright test --headed
     - There shouldn't be that much code in these files.  These specs should really only contain the skeleton code that calls the functions locaed in `/testPages/`
   - Example: `/tests/ui/homeowner-registration.spec.js`
 
-- `/testPages/<user><feature>`
+- `/testPages/<user>/<feature>`
   - Centralized location for all common functions, `data-testid`s, and test data used in a feature of the site
   - `<user>` is a user type, such as homeowner or agent
   - `<feature>` is a feature of the app, such as dashboard, profile, or search
