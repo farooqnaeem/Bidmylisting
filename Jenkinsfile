@@ -1,6 +1,6 @@
 pipeline {
   parameters {
-    choice(name: 'Environment', choices: ['ci', 'qa', 'prod'], description: 'Select environment to run automated tests')
+    choice(name: 'Environment', choices: ['CI', 'QA', 'PROD'], description: 'Select environment to run automated tests')
   }
   environment {
     ENV = "${params.Environment}"
@@ -32,7 +32,7 @@ pipeline {
     stage('test') {
       steps {
         sh '''
-          if [ $ENV = 'ci' ]; then
+          if [ $ENV = 'CI' ]; then
             echo "BML_ENV=CI" > .env
             cat .env
             npx playwright test api --config=playwright.ci.config.js --project=chromium --workers=1
@@ -41,12 +41,11 @@ pipeline {
             npx playwright test ui/homeowner-registration.spec --config=playwright.ci.config.js --project=chromium --workers=1
             npx playwright test ui/homepage.spec --config=playwright.ci.config.js --project=chromium --workers=1
             npx playwright test ui/marketing-funnel.spec --config=playwright.ci.config.js --project=chromium --workers=1
-          elif [ $ENV = 'qa' ]; then
+          elif [ $ENV = 'QA' ]; then
             echo "BML_ENV=QA" > .env
             cat .env
-            npx playwright test api --config=playwright.qa.config.js --project=chromium --workers=1
-            npx playwright test ui/agent-registration.spec --config=playwright.qa.config.js --project=chromium --workers=1
-          elif [ $ENV = 'prod' ]; then
+            npx playwright test ui/homeowner-registration.spec.js --config=playwright.qa.config.js --project=chromium --workers=1
+          elif [ $ENV = 'PROD' ]; then
             echo "BML_ENV=PROD" > .env
             cat .env
             npx playwright test --list --config=playwright.prod.config.js --project=chromium --workers=1
