@@ -15,7 +15,7 @@ const pageURLs = [
   urls.HOMEOWNER_REG_ACCOUNT_INFO,
   urls.HOMEOWNER_REG_PROPERTY_PRICE,
   urls.HOMEOWNER_REG_PROPERTY_PHOTO,
-  urls.HOMEOWNER_REG_LISTING_DESRIPTION
+  urls.HOMEOWNER_REG_LISTING_DESCRIPTION
 ]
 
 // Note: this function is for happy path and it just fills in the form
@@ -23,13 +23,12 @@ async function addressLookup (page) {
   await expect(page).toHaveURL(pageURLs[1]);
   
   // Enter address
+  await page.locator(ids.addressLookup.address).click()
   await page.waitForSelector(ids.addressLookup.address);
-  await page.waitForTimeout(1000);
-  await page.keyboard.press('Tab');
   await page.waitForTimeout(1000);
   await page.keyboard.type(data.address);
   await page.waitForTimeout(1000);
-  await page.keyboard.press('ArrowDown');
+  await page.keyboard.press('ArrowDown'); 
   await page.waitForTimeout(1000);
   await page.keyboard.press('Enter'); 
   await page.locator(ids.next).click();
@@ -146,6 +145,7 @@ async function testPhotoUpload(page) {
 
 // Note: happy path, put in text only and checks all checkboxes
 async function listingDescription(page) {
+  await page.waitForTimeout(1000);
   await expect(page).toHaveURL(pageURLs[10]);
   await testGoBack(page, 10);
   await testCorrectAddress(page);
