@@ -1,0 +1,23 @@
+{
+"homeownerButton": "a[class=\"seller\"]",
+  "enterAddress": "input[class=\"MuiInputBase-input MuiInputBase-inputAdornedStart\"]",
+  "istanbul": "div[class=\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12\"] div:nth-child(1) div:nth-child(2) span",
+  "nextButton": "span[class=\"MuiButton-label\"]",
+  "zipCode": "#zipCode",
+  "numberofBedrooms": "#bedrooms",
+  "numberofBaths": "#bathrooms",
+  "squareFootage": "#squareFeet",
+  "listingAgent": "div[data-testid=\"homeowner-registration-working-with-an-agent-step-option-Yes\"]",
+  "expireMonth": "div[data-testid=\"homeowner-radio-selections-2\"]",
+  "sellYourHome": "div[data-testid=\"homeowner-registration-selling-period-step-option-browsing\"]",
+  "conditionofHome": "div[data-testid=\"homeowner-radio-selections-fair\"]",
+  "yesButtonofBuyaHome": "div[data-testid=\"homeowner-registration-buying-a-home-step-option-true\"]",
+  "enterFirstName": "#firstName",
+  "enterLastName": "#lastName",
+  "emailAddress": "#email",
+  "reverifyEmailAddress": "#emailRetype",
+  "phoneNumber": "#phoneNumber",
+  "Password": "#password",
+  "clickonCheckbox": "span[data-testid=\"homeowner-registration-account-info-step-agree-terms\"]",
+  "createMyListing": "span[class=\"MuiButton-label\"]"
+}
