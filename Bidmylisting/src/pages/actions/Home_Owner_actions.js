@@ -106,13 +106,13 @@ class Homeowner {
     async emailAddress(page) {
         await waitUtility.waitForElementWithTime(page, bidmylisting.emailAddress, 40000)
         await clickUtility.clickElement(page, bidmylisting.emailAddress)
-        await input.enterText(page, bidmylisting.emailAddress, 'itsfarooqnaeem+2@gmail.com')
+        await input.enterText(page, bidmylisting.emailAddress, 'itsfarooqnaeem+3@gmail.com')
     }
 
     async reverifyEmailAddress(page) {
         await waitUtility.waitForElementWithTime(page, bidmylisting.reverifyEmailAddress, 40000)
         await clickUtility.clickElement(page, bidmylisting.reverifyEmailAddress)
-        await input.enterText(page, bidmylisting.reverifyEmailAddress, 'itsfarooqnaeem+2@gmail.com')
+        await input.enterText(page, bidmylisting.reverifyEmailAddress, 'itsfarooqnaeem+3@gmail.com')
     }
 
     async phoneNumber(page) {
