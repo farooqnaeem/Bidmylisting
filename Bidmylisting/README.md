@@ -2,7 +2,7 @@
 
 # Automation Suite - Getting Started
 
-Selfie pop Automation suite setup with puppeteer
+Bidmylisting Automation suite setup with puppeteer
 
 ## Prerequisites
 
@@ -11,9 +11,9 @@ Selfie pop Automation suite setup with puppeteer
 
 ## Setting up the automation suite
 
-1. Clone the Sendoso test-automation locally into a folder - (https://github.com/Selfie-Pop-Inc/Web-Automation-suite.git
+1. Clone the Bidmylisting test-automation locally into a folder - (https://github.com/bidmylisting/Web-Automation-suite.git
 )
-   - Use the following command inside the desired folder - git clone https://github.com/Selfie-Pop-Inc/Web-Automation-suite.git
+   - Use the following command inside the desired folder - git clone https://github.com/farooqnaeem/Bidmylisting.git
 
 2. Go inside the folder and run the following command from the terminal/command prompt - npm install
 3. All the dependencies from package.json and ambient typings would be installed in the node_modules folder
@@ -37,7 +37,7 @@ In order to run locally, you need to install all node packages by running below 
 - A common file which stores feature, scenarios, and feature description to be tested.
 
 ```@login
-  Feature: Selfie pop login scenario
+  Feature: bidmylisting login scenario
    Scenario: To login from extension on Cameo site
    Given I have opened Selfie pop URL
 
@@ -50,10 +50,10 @@ In order to run locally, you need to install all node packages by running below 
 
 ```
 import {Given, Then} from "@cucumber/cucumber";
-import cameoIntegration from '../pages/actions/selfiepop'
+import cameoIntegration from '../pages/actions/bidmylisting'
 
-Given(/^I have opened cameo url$/,async function () {
-   await selfiepopIntegration.hitselfiepopUrl(this.page)
+Given(/^I have opened bidmylisting url$/,async function () {
+   await bidmylisting.hitselfiepopUrl(this.page)
 
 ```
 
@@ -64,9 +64,9 @@ Given(/^I have opened cameo url$/,async function () {
 
 ```
 import click_utility from '../../../utilities/click_utility'
-import selfiepopLocators from '../../locators/cameoLocators.json'
+import selfiepopLocators from '../../locators/bidmylisting.json'
 
-class CameoIntegration {
+class bidmylistting {
   async hitCameoUrl(page){
     await page.goto("https://www.cameo.com/gabbydouglas")
   }
@@ -83,7 +83,7 @@ class CameoIntegration {
   "cameoSite":{
     "closeBtn": "._1PS9LZFlhC2Amzp6S8ZxqR",
     "celebLink":"a[title='Gabby Douglas']",
-    "selfiepopExtension": "#sendoso-extension-cameo-button"
+    "bidmylisting": "#email"
   }
 }
 ```
