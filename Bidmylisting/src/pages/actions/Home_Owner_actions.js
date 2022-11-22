@@ -3,8 +3,6 @@ import * as bidmylisting from "../../locators/Home_Owner.json";
 import clickUtility from "../../utility/clickUtility";
 import input from "../../utility/input";
 import { expect } from 'chai';
-import {data} from "browserslist";
-import agent from "../../data/agent.json";
 
 
 
@@ -148,9 +146,16 @@ class Homeowner {
     async agentFistName (page) {
         await waitUtility.waitForElementWithTime(page, bidmylisting.agentFistName, 40000)
         await clickUtility.clickElement(page, bidmylisting.agentFistName)
-        await input.enterText(page,bidmylisting.agentFistName,"Farooq")
+        await input.enterText(page,bidmylisting.agentFistName,"Lauren")
        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#firstName','value')
-        await expect(valueEnteredOnWebPage).to.equals("Farooq")
+        await expect(valueEnteredOnWebPage).to.equals("Lauren")
+    }
+    async agentLastName (page) {
+        await waitUtility.waitForElementWithTime(page, bidmylisting.agentLastName, 40000)
+        await clickUtility.clickElement(page, bidmylisting.agentLastName)
+        await input.enterText(page,bidmylisting.agentLastName,"Trinida")
+        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#lastName','value')
+        await expect(valueEnteredOnWebPage).to.equals("Trinida")
     }
 }
 

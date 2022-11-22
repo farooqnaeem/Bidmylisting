@@ -21,5 +21,6 @@
   "clickonCheckbox": "span[data-testid=\"homeowner-registration-account-info-step-agree-terms\"]",
   "createMyListing": "span[class=\"MuiButton-label\"]",
   "agentRegistration": "a[class=\"agent\"]",
-  "agentFistName": "#firstName"
+  "agentFistName": "#firstName",
+  "agentLastName": "#lastName"
 }

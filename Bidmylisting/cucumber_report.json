@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1097620938
+              "duration": 978278358
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1415223
+              "duration": 1212112
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18170945190
+              "duration": 12446036167
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 139652552
+              "duration": 120796650
             }
           },
           {
@@ -66,7 +66,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 266728880
+              "duration": 265310390.99999997
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "The user enter the last Name for agent",
+            "match": {
+              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 267522634.99999997
             }
           },
           {
@@ -74,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 201579
+              "duration": 208635
             }
           }
         ],
