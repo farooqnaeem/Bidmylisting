@@ -22,5 +22,6 @@
   "createMyListing": "span[class=\"MuiButton-label\"]",
   "agentRegistration": "a[class=\"agent\"]",
   "agentFistName": "#firstName",
-  "agentLastName": "#lastName"
+  "agentLastName": "#lastName",
+  "agentEmailAddress": "#email"
 }

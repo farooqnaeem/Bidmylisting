@@ -70,3 +70,6 @@ await HomeOwner.agentFistName(this.page)
 Then(/^The user enter the last Name for agent$/,async function () {
 await HomeOwner.agentLastName(this.page)
 });
+Then(/^The user enter the email address of agent$/,async function () {
+await HomeOwner.agentEmailAddress(this.page)
+});

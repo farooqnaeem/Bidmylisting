@@ -5,6 +5,7 @@ Feature: Add new links.
     Then The user click on agent registration button
     Then The user enter the First Name
     Then The user enter the last Name for agent
+    Then The user enter the email address of agent
 
 
 

@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 978278358
+              "duration": 816439141
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1212112
+              "duration": 726492
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12446036167
+              "duration": 23679326853
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 120796650
+              "duration": 133113564
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 265310390.99999997
+              "duration": 299039214
             }
           },
           {
@@ -79,7 +79,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 267522634.99999997
+              "duration": 285404662
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The user enter the email address of agent",
+            "match": {
+              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 859286484
             }
           },
           {
@@ -87,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 208635
+              "duration": 220750
             }
           }
         ],

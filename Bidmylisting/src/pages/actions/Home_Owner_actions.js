@@ -157,6 +157,13 @@ class Homeowner {
         let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#lastName','value')
         await expect(valueEnteredOnWebPage).to.equals("Trinida")
     }
+    async agentEmailAddress (page) {
+        await waitUtility.waitForElementWithTime(page, bidmylisting.agentEmailAddress, 40000)
+        await clickUtility.clickElement(page, bidmylisting.agentLastName)
+        await input.enterText(page,bidmylisting.agentEmailAddress,"lauren@bidmylisting.com")
+        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#email','value')
+        await expect(valueEnteredOnWebPage).to.equals("lauren@bidmylisting.com")
+    }
 }
 
 export default new Homeowner();
