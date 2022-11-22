@@ -202,6 +202,11 @@ class Homeowner {
         await waitUtility.waitForElementWithTime(page, bidmylisting.agentCheckbox, 40000)
         await clickUtility.clickElement(page, bidmylisting.agentCheckbox)
     }
+    async createAccountButton (page) {
+        await page.waitForTimeout(3000)
+        await waitUtility.waitForElementWithTime(page, bidmylisting.createAccountButton, 40000)
+        await clickUtility.clickElement(page, bidmylisting.createAccountButton)
+    }
 }
 
 export default new Homeowner();

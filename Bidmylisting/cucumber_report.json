@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 873208258
+              "duration": 888695624
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 925475
+              "duration": 1301654
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6200300300
+              "duration": 12751741562
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 135149704
+              "duration": 165170707
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 351614432
+              "duration": 305103105
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 282176761
+              "duration": 316198368
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 821885892
+              "duration": 860596884
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 815801721
+              "duration": 865474225
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 388181698
+              "duration": 366899435
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 188450093
+              "duration": 199136528
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 538053969
+              "duration": 554699261
             }
           },
           {
@@ -157,7 +157,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3029745011
+              "duration": 3058894333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "The user click on create Account button of Agent",
+            "match": {
+              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3041760507
             }
           },
           {
@@ -165,7 +178,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 323026
+              "duration": 220073
             }
           }
         ],

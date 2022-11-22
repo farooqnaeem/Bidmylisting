@@ -88,3 +88,6 @@ await HomeOwner.enterPassword(this.page)
 Then(/^The user click on checkbox of agent$/,async function () {
 await HomeOwner.agentCheckbox(this.page)
 });
+Then(/^The user click on create Account button of Agent$/,async function () {
+await HomeOwner.createAccountButton(this.page)
+});

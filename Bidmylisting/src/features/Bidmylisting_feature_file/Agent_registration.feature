@@ -11,6 +11,7 @@ Feature: Add new links.
     Then The user enter the zip code of agent
     Then The user enter the Password of Agent
     Then The user click on checkbox of agent
+    Then The user click on create Account button of Agent
 
 
 
