@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 826847445
+              "duration": 873208258
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1385780
+              "duration": 925475
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24487062488
+              "duration": 6200300300
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 119491598
+              "duration": 135149704
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 328916720
+              "duration": 351614432
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 321185826
+              "duration": 282176761
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 853615653
+              "duration": 821885892
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 819098052
+              "duration": 815801721
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 363504811
+              "duration": 388181698
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 221690270
+              "duration": 188450093
             }
           },
           {
@@ -144,7 +144,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 534539802
+              "duration": 538053969
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "The user click on checkbox of agent",
+            "match": {
+              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3029745011
             }
           },
           {
@@ -152,7 +165,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 196277
+              "duration": 323026
             }
           }
         ],

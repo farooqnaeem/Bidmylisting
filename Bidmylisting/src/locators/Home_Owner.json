@@ -27,5 +27,6 @@
   "agentEmailReverify": "#emailRetype",
   "agentPhoneNumber": "#phoneNumber",
   "agentZipCode": "#zip",
-  "enterPassword": "#password"
+  "enterPassword": "#password",
+  "agentCheckbox": "input[data-testid=\"agent-registration-create-account-step-agree-terms-check\"]"
 }

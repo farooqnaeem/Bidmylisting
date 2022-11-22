@@ -85,3 +85,6 @@ await HomeOwner.agentZipCode(this.page)
 Then(/^The user enter the Password of Agent$/,async function () {
 await HomeOwner.enterPassword(this.page)
 });
+Then(/^The user click on checkbox of agent$/,async function () {
+await HomeOwner.agentCheckbox(this.page)
+});

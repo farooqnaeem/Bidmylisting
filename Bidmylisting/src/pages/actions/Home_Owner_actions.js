@@ -143,52 +143,64 @@ class Homeowner {
         await clickUtility.clickElement(page, bidmylisting.agentRegistration)
     }
 
-    async agentFistName (page) {
+    async agentFistName(page) {
         await waitUtility.waitForElementWithTime(page, bidmylisting.agentFistName, 40000)
         await clickUtility.clickElement(page, bidmylisting.agentFistName)
-        await input.enterText(page,bidmylisting.agentFistName,"Lauren")
-       let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#firstName','value')
+        await input.enterText(page, bidmylisting.agentFistName, "Lauren")
+        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page, '#firstName', 'value')
         await expect(valueEnteredOnWebPage).to.equals("Lauren")
     }
-    async agentLastName (page) {
+
+    async agentLastName(page) {
         await waitUtility.waitForElementWithTime(page, bidmylisting.agentLastName, 40000)
         await clickUtility.clickElement(page, bidmylisting.agentLastName)
-        await input.enterText(page,bidmylisting.agentLastName,"Trinida")
-        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#lastName','value')
+        await input.enterText(page, bidmylisting.agentLastName, "Trinida")
+        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page, '#lastName', 'value')
         await expect(valueEnteredOnWebPage).to.equals("Trinida")
     }
-    async agentEmailAddress (page) {
+
+    async agentEmailAddress(page) {
         await waitUtility.waitForElementWithTime(page, bidmylisting.agentEmailAddress, 40000)
         await clickUtility.clickElement(page, bidmylisting.agentLastName)
-        await input.enterText(page,bidmylisting.agentEmailAddress,"lauren@bidmylisting.com")
-        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#email','value')
+        await input.enterText(page, bidmylisting.agentEmailAddress, "lauren@bidmylisting.com")
+        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page, '#email', 'value')
         await expect(valueEnteredOnWebPage).to.equals("lauren@bidmylisting.com")
     }
-    async agentEmailReverify (page) {
+
+    async agentEmailReverify(page) {
         await waitUtility.waitForElementWithTime(page, bidmylisting.agentEmailReverify, 40000)
         await clickUtility.clickElement(page, bidmylisting.agentEmailReverify)
-        await input.enterText(page,bidmylisting.agentEmailReverify,"lauren@bidmylisting.com")
-        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#emailRetype','value')
+        await input.enterText(page, bidmylisting.agentEmailReverify, "lauren@bidmylisting.com")
+        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page, '#emailRetype', 'value')
         await expect(valueEnteredOnWebPage).to.equals("lauren@bidmylisting.com")
     }
-    async agentPhoneNumber (page) {
+
+    async agentPhoneNumber(page) {
         await waitUtility.waitForElementWithTime(page, bidmylisting.agentPhoneNumber, 40000)
         await clickUtility.clickElement(page, bidmylisting.agentPhoneNumber)
-        await input.enterText(page,bidmylisting.agentPhoneNumber,"3234245106")
+        await input.enterText(page, bidmylisting.agentPhoneNumber, "3234245106")
     }
-    async agentZipCode (page) {
+
+    async agentZipCode(page) {
         await waitUtility.waitForElementWithTime(page, bidmylisting.agentZipCode, 40000)
         await clickUtility.clickElement(page, bidmylisting.agentZipCode)
-        await input.enterText(page,bidmylisting.agentZipCode,"9980")
-        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#zip','value')
+        await input.enterText(page, bidmylisting.agentZipCode, "9980")
+        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page, '#zip', 'value')
         await expect(valueEnteredOnWebPage).to.contain("9980")
     }
-    async enterPassword (page) {
+
+    async enterPassword(page) {
         await waitUtility.waitForElementWithTime(page, bidmylisting.enterPassword, 40000)
         await clickUtility.clickElement(page, bidmylisting.enterPassword)
-        await input.enterText(page,bidmylisting.enterPassword,"bidmylisting")
-        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#password','value')
+        await input.enterText(page, bidmylisting.enterPassword, "bidmylisting")
+        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page, '#password', 'value')
         await expect(valueEnteredOnWebPage).to.contain("bidmylisting")
+    }
+
+    async agentCheckbox (page) {
+        await page.waitForTimeout(3000)
+        await waitUtility.waitForElementWithTime(page, bidmylisting.agentCheckbox, 40000)
+        await clickUtility.clickElement(page, bidmylisting.agentCheckbox)
     }
 }
 
