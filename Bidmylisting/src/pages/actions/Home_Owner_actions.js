@@ -183,6 +183,13 @@ class Homeowner {
         let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#zip','value')
         await expect(valueEnteredOnWebPage).to.contain("9980")
     }
+    async enterPassword (page) {
+        await waitUtility.waitForElementWithTime(page, bidmylisting.enterPassword, 40000)
+        await clickUtility.clickElement(page, bidmylisting.enterPassword)
+        await input.enterText(page,bidmylisting.enterPassword,"bidmylisting")
+        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#password','value')
+        await expect(valueEnteredOnWebPage).to.contain("bidmylisting")
+    }
 }
 
 export default new Homeowner();

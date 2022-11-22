@@ -9,6 +9,7 @@ Feature: Add new links.
     Then The user enter the reverify the address of agent
     Then The user enter the phone number of agent
     Then The user enter the zip code of agent
+    Then The user enter the Password of Agent
 
 
 

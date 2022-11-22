@@ -26,5 +26,6 @@
   "agentEmailAddress": "#email",
   "agentEmailReverify": "#emailRetype",
   "agentPhoneNumber": "#phoneNumber",
-  "agentZipCode": "#zip"
+  "agentZipCode": "#zip",
+  "enterPassword": "#password"
 }

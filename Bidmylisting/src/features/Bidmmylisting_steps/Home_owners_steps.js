@@ -82,3 +82,6 @@ await HomeOwner.agentPhoneNumber(this.page)
 Then(/^The user enter the zip code of agent$/,async function () {
 await HomeOwner.agentZipCode(this.page)
 });
+Then(/^The user enter the Password of Agent$/,async function () {
+await HomeOwner.enterPassword(this.page)
+});
