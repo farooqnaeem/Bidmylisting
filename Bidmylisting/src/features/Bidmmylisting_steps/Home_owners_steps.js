@@ -61,3 +61,6 @@ await HomeOwner.clickonCheckbox(this.page)
 Then(/^The user click on create my listing button$/,async function () {
 await HomeOwner.createMyListing(this.page)
 });
+Then(/^The user click on agent registration button$/,async function () {
+await HomeOwner.agentRegistration(this.page)
+});

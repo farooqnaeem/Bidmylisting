@@ -1,0 +1,117 @@
+.amazon-button {
+  border: none;
+  margin-top: 15%;
+  background: #fa9f47;
+  font-size: 12px;
+  margin-bottom: 14px;
+  margin-top: 0;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0 14px;
+  line-height: 32px;
+  border-radius: 2px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0 4px 16px 0 rgba(222, 111, 32, 0.24);
+  background: linear-gradient(135deg, #FB8B24 0%, #DA6D1F 100%);
+}
+
+.amazon-button:hover {
+  background-color: #ed861e;
+  border-color: #d67411;
+}
+
+/*On click opening amazon window*/
+.amazon-menu {
+  position: fixed;
+  right: 0;
+  top: 12px;
+  bottom: 0;
+  z-index: 9999;
+  width: 90px;
+  height: 90px;
+}
+
+#send-product-sidebar-icon {
+  float: right;
+  cursor: pointer;
+}
+
+.amazon-menu .amazon-content {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 24px 0 rgba(17, 18, 16, 0.24);
+  width: 456px;
+  height: 680px;
+  position: absolute;
+  right: 92px;
+  bottom: 0;
+  top: 10px;
+  overflow: auto;
+  transform: translateY(-200%);
+  display: none;
+}
+
+.amazon-menu .show {
+  transform: translateY(0);
+  display: flex !important;
+  flex-direction: column;
+}
+
+/*On click opening amazon window*/
+
+.loading-area {
+  height: 638px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loading-image {
+  margin-bottom: 40px;
+}
+.loading-content {
+  width: 272px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+.loading-content h2 {
+  color: #282B26;
+  font-size: 24px;
+  letter-spacing: -0.75px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.loading-content p {
+  color: #787878;
+  font-size: 18px;
+  letter-spacing: -0.56px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+#loading {
+  -webkit-animation: rotation 2s infinite linear reverse;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sendoso-iframe{
+  display: none;
+}

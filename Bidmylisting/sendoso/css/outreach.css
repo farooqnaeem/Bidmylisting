@@ -1,0 +1,42 @@
+.outreach-menu {
+  position: fixed;
+  top: 6.6rem;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+.outreach-menu .outreach-content {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 24px 0 rgba(17, 18, 16, 0.24);
+  width: 456px;
+  height: 680px;
+  position: absolute;
+  right: 92px;
+  bottom: 0;
+  top: 10px;
+  overflow: auto;
+  transform: translateY(-200%);
+  display: none;
+}
+  
+.outreach-menu .show {
+  transform: translateY(0);
+  display: flex !important;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1470px) {
+  .outreach-menu .outreach-content {
+    height: 560px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .outreach-menu .outreach-content {
+    height: 460px;
+  }
+}

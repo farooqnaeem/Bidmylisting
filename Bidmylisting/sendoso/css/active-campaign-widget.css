@@ -1,0 +1,30 @@
+.active-campaign-menu {
+  position: fixed;
+  right: 0;
+  top: 0.5rem;
+  bottom: 0;
+  z-index: 9999;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+.active-campaign-menu .active-campaign-content {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 24px 0 rgba(17, 18, 16, 0.24);
+  width: 456px;
+  height: 680px;
+  position: absolute;
+  right: 92px;
+  bottom: 0;
+  top: 10px;
+  overflow: auto;
+  transform: translateY(-200%);
+  display: none;
+}
+  
+.active-campaign-menu .show {
+  transform: translateY(0);
+  display: flex !important;
+  flex-direction: column;
+}

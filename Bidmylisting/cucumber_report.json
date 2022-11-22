@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 6350063532
+              "duration": 927143150
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 838267
+              "duration": 1114757
             }
           },
           {
@@ -40,358 +40,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4110578466
+              "duration": 9421624434
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 5,
-            "name": "The user click on homeowner button",
+            "name": "The user click on agent registration button",
             "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:9"
+              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:69"
             },
             "result": {
               "status": "passed",
-              "duration": 2153408108
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "The user enter the address",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7604320739
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "The user click on next button",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 36399966
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "The user enter the zip code",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1401632962.0000002
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "The user click on next button",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 83275729
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "The user enter the bedrooms",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 49514355
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "The user enter the baths",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 65502195
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "The user enter the SquaremFootage",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 170041211
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "The user click on next button",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 62880988
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "The user click on yes button of listing agent",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 60076552
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "The user click on next button",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 14295592
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "The user click on listing agreement expire",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 55713321
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "The user click on next button",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 26673254
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "The user ask for sell his home",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:36"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 52085414
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "The user click on next button",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13845839
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "The user ask for condition of home",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 49229817
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "The user click on next button",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 16874526
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "The user click on yes button of buy a home",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 72290651
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 23,
-            "name": "The user click on next button",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 38375012
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "The user enter the first name",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:45"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 163829527
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "The user enter the last name",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 155052038
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
-            "name": "The user enter the email address",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:51"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 938280782
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 27,
-            "name": "The user reverify the email address",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 928600266
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 28,
-            "name": "The user enter the phone number",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:57"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 419862397
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "The user enter the Password",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:60"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 453213191
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 30,
-            "name": "The user click on checkbox",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:63"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 22515845
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
-            "name": "The user click on create my listing button",
-            "match": {
-              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:66"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 56043893
+              "duration": 136821974
             }
           },
           {
@@ -399,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 195502
+              "duration": 320042
             }
           }
         ],
@@ -412,6 +74,6 @@
     "keyword": "Feature",
     "name": "Add new links.",
     "tags": [],
-    "uri": "src/features/Bidmylisting_feature_file/Home_owners.feature"
+    "uri": "src/features/Bidmylisting_feature_file/Agent_registration.feature"
   }
 ]

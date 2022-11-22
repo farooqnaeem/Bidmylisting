@@ -1,0 +1,46 @@
+.loading-area {
+  height: 638px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loading-image {
+  margin-bottom: 40px;
+}
+.loading-content {
+  width: 272px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+.loading-content h2 {
+  color: #282B26;
+  font-size: 24px;
+  letter-spacing: -0.75px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.loading-content p {
+  color: #787878;
+  font-size: 18px;
+  letter-spacing: -0.56px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+#loading {
+  -webkit-animation: rotation 2s infinite linear reverse;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sendoso-iframe{
+  display: none;
+}

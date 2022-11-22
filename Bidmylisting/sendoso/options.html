@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 500px; height: 400px">
+  <head>
+    <meta charset="utf-8">
+    <title>Sendoso</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="css/options.css">
+  	<link rel="stylesheet" href="css/bootstrap.css">
+  	<script src="js/bugsnag.min.js"></script>
+  	<script type="text/javascript" src="utilities/jquery-3.5.1.min.js"></script>
+  	<script type="text/javascript" src="js/bootstrap.js"></script>
+  	<script type="text/javascript" src="js/options.js"></script>
+  </head>
+  <body>
+    <div class="setup_btns_div">
+      <center>
+        <h5><strong>Enable the 'Sendoso' button within these sites:</strong></h5>
+        <div>
+          Hide All
+          <div class="switch">
+            <input class="checkbox-inside-radio-btn" id="hideall" type="checkbox" value="hideall">
+            <label for="hideall">Hide ALL</label>
+          </div>
+        </div>
+      </center>
+      <br/>
+      <ul class="nav nav-tabs setup_btn_tabs">
+        <li class="col-xs-12 active" id="integration_tab">
+          <a class="tab-border" aria-controls="account" data-toggle="tab" role="tab" href="#integration_buttons" aria-expanded="true">Button Settings</a>
+        </li>
+        <div class="tab-content responsive">
+          <div class="tab-pane active" id="integration_buttons">
+            <div class="col-xs-12 salesforce">
+              <div class="source">
+                <div class="col-xs-2"><img alt="Salesforce logo" src="/img/salesforce.jpg"></div>
+                <div class="col-xs-3 title">Salesforce</div>
+                <div class="pull-left switch">
+                  <input checked="" class="checkbox-inside-radio-btn" id="salesforce" type="checkbox" value="salesforce">
+                  <label for="salesforce">Salesforce</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="source">
+                <div class="col-xs-2"><img alt="Outreach logo" src="/img/outreach.jpg"></div>
+                <div class="col-xs-3 title">Outreach</div>
+                <div class="pull-left switch">
+                  <input checked="" class="checkbox-inside-radio-btn" id="outreach" type="checkbox" value="outreach">
+                  <label for="outreach">Outreach</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="source">
+                <div class="col-xs-2"><img alt="Amazon logo" src="/img/amazon.png"></div>
+                <div class="col-xs-3 title">Amazon</div>
+                <div class="pull-left switch">
+                  <input checked="" class="checkbox-inside-radio-btn" id="amazon" type="checkbox" value="amazon">
+                  <label for="amazon">Amazon</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="source">
+                <div class="col-xs-2"><img alt="Salesloft logo" src="/img/salesloft.png"></div>
+                <div class="col-xs-3 title">Salesloft</div>
+                <div class="pull-left switch">
+                  <input checked="" class="checkbox-inside-radio-btn" id="salesloft" type="checkbox" value="salesloft">
+                  <label for="salesloft">Salesloft</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="source">
+                <div class="col-xs-2"><img alt="Hubspot logo" src="/img/hubspot.png"></div>
+                <div class="col-xs-3 title">Hubspot</div>
+                <div class="pull-left switch">
+                  <input checked="" class="checkbox-inside-radio-btn" id="hubspot" type="checkbox" value="hubspot">
+                  <label for="hubspot">Hubspot</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="source">
+                <div class="col-xs-2"><img alt="Active Campaign Logo" src="/img/active-campaign.jpg"></div>
+                <div class="col-xs-3 title">ActiveCampaign</div>
+                <div class="pull-left switch">
+                  <input checked="" class="checkbox-inside-radio-btn" id="active_campaign" type="checkbox" value="active_campaign">
+                  <label for="active_campaign">ActiveCampai</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-11">
+                <div class="pull-right"><button class="btn-orange save">Save</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </body>
+</html>

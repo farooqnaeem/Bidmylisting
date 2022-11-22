@@ -19,5 +19,6 @@
   "phoneNumber": "#phoneNumber",
   "Password": "#password",
   "clickonCheckbox": "span[data-testid=\"homeowner-registration-account-info-step-agree-terms\"]",
-  "createMyListing": "span[class=\"MuiButton-label\"]"
+  "createMyListing": "span[class=\"MuiButton-label\"]",
+  "agentRegistration": "a[class=\"agent\"]"
 }

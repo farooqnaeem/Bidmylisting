@@ -9,7 +9,7 @@
   "scripts": {
     "start": "npm run start:remote",
     "start:remote": "PUPPETEER_EXEC_PATH='/usr/bin/google-chrome' cucumber-js --require-module @babel/register --require-module @babel/polyfill --tags=$npm_config_stage -f json:cucumber_report.json --retry 1",
-    "localExecution": "PUPPETEER_EXEC_PATH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' cucumber-js --require-module @babel/register --require-module @babel/polyfill src/features/Bidmylisting_feature_file/Home_owners.feature -f json:cucumber_report.json staging",
+    "localExecution": "PUPPETEER_EXEC_PATH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' cucumber-js --require-module @babel/register --require-module @babel/polyfill src/features/Bidmylisting_feature_file/Agent_registration.feature -f json:cucumber_report.json staging",
     "report": "node cucumberreport.js",
     "testreport": "npm run localExecution && npm run report",
     "lint": "eslint --ext .js src/ --fix",

@@ -1,0 +1,36 @@
+.salesloft-menu {
+  position: fixed;
+  right: 0;
+  top: 3rem;
+  bottom: 0;
+  z-index: 9999;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+.salesloft-menu .salesloft-content {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 24px 0 rgba(17, 18, 16, 0.24);
+  width: 456px;
+  height: 680px;
+  position: absolute;
+  right: 92px;
+  bottom: 0;
+  top: 10px;
+  overflow: auto;
+  transform: translateY(-200%);
+  display: none;
+}
+  
+.salesloft-menu .show {
+  transform: translateY(0);
+  display: flex !important;
+  flex-direction: column;
+}
+
+#loading {
+  display: block !important;
+  margin-right: auto;
+  margin-left: auto;
+}

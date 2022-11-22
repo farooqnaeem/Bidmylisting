@@ -131,9 +131,15 @@ class Homeowner {
         await waitUtility.waitForElementWithTime(page, bidmylisting.clickonCheckbox, 40000)
         await clickUtility.clickElement(page, bidmylisting.clickonCheckbox)
     }
-    async createMyListing (page) {
+
+    async createMyListing(page) {
         await waitUtility.waitForElementWithTime(page, bidmylisting.createMyListing, 40000)
         await clickUtility.clickElement(page, bidmylisting.createMyListing)
+    }
+
+    async agentRegistration(page) {
+        await waitUtility.waitForElementWithTime(page, bidmylisting.agentRegistration, 40000)
+        await clickUtility.clickElement(page, bidmylisting.agentRegistration)
     }
 }
 
