@@ -198,12 +198,12 @@ class Homeowner {
     }
 
     async agentCheckbox (page) {
-        await page.waitForTimeout(3000)
+        await page.waitForTimeout(4000)
         await waitUtility.waitForElementWithTime(page, bidmylisting.agentCheckbox, 40000)
         await clickUtility.clickElement(page, bidmylisting.agentCheckbox)
     }
     async createAccountButton (page) {
-        await page.waitForTimeout(3000)
+        await page.waitForTimeout(5000)
         await waitUtility.waitForElementWithTime(page, bidmylisting.createAccountButton, 40000)
         await clickUtility.clickElement(page, bidmylisting.createAccountButton)
     }

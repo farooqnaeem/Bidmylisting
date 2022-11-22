@@ -29,5 +29,5 @@
   "agentZipCode": "#zip",
   "enterPassword": "#password",
   "agentCheckbox": "input[data-testid=\"agent-registration-create-account-step-agree-terms-check\"]",
-  "createAccountButton": "button[data-testid=\"agent-registration-create-account-step-submit\"]"
+  "createAccountButton": "span[class=\"MuiButton-label\"]"
 }

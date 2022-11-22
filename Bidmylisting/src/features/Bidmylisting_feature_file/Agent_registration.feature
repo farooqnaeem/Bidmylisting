@@ -1,5 +1,5 @@
-Feature: Add new links.
-  Scenario Outline: Selfie pop Add new links.
+Feature: Check validation.
+  Scenario Outline: Bid my listing
     Given I read the login file "<filename>" with "<key>"
     When I hit the url
     Then The user click on agent registration button
