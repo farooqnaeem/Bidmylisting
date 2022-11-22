@@ -23,5 +23,8 @@
   "agentRegistration": "a[class=\"agent\"]",
   "agentFistName": "#firstName",
   "agentLastName": "#lastName",
-  "agentEmailAddress": "#email"
+  "agentEmailAddress": "#email",
+  "agentEmailReverify": "#emailRetype",
+  "agentPhoneNumber": "#phoneNumber",
+  "agentZipCode": "#zip"
 }

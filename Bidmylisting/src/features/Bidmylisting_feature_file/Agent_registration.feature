@@ -6,6 +6,10 @@ Feature: Add new links.
     Then The user enter the First Name
     Then The user enter the last Name for agent
     Then The user enter the email address of agent
+    Then The user enter the reverify the address of agent
+    Then The user enter the phone number of agent
+    Then The user enter the zip code of agent
+
 
 
 

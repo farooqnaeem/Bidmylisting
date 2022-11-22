@@ -73,3 +73,12 @@ await HomeOwner.agentLastName(this.page)
 Then(/^The user enter the email address of agent$/,async function () {
 await HomeOwner.agentEmailAddress(this.page)
 });
+Then(/^The user enter the reverify the address of agent$/,async function () {
+await HomeOwner.agentEmailReverify(this.page)
+});
+Then(/^The user enter the phone number of agent$/,async function () {
+await HomeOwner.agentPhoneNumber(this.page)
+});
+Then(/^The user enter the zip code of agent$/,async function () {
+await HomeOwner.agentZipCode(this.page)
+});

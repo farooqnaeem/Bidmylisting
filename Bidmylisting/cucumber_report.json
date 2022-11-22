@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 816439141
+              "duration": 825161922
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 726492
+              "duration": 1577096
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23679326853
+              "duration": 23715690079
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 133113564
+              "duration": 135065425
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 299039214
+              "duration": 357608878
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 285404662
+              "duration": 286936560
             }
           },
           {
@@ -92,7 +92,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 859286484
+              "duration": 831442014
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "The user enter the reverify the address of agent",
+            "match": {
+              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 817636672
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "The user enter the phone number of agent",
+            "match": {
+              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 386098907
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The user enter the zip code of agent",
+            "match": {
+              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 180247651
             }
           },
           {
@@ -100,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 220750
+              "duration": 304035
             }
           }
         ],

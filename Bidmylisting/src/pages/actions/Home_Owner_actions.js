@@ -164,6 +164,25 @@ class Homeowner {
         let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#email','value')
         await expect(valueEnteredOnWebPage).to.equals("lauren@bidmylisting.com")
     }
+    async agentEmailReverify (page) {
+        await waitUtility.waitForElementWithTime(page, bidmylisting.agentEmailReverify, 40000)
+        await clickUtility.clickElement(page, bidmylisting.agentEmailReverify)
+        await input.enterText(page,bidmylisting.agentEmailReverify,"lauren@bidmylisting.com")
+        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#emailRetype','value')
+        await expect(valueEnteredOnWebPage).to.equals("lauren@bidmylisting.com")
+    }
+    async agentPhoneNumber (page) {
+        await waitUtility.waitForElementWithTime(page, bidmylisting.agentPhoneNumber, 40000)
+        await clickUtility.clickElement(page, bidmylisting.agentPhoneNumber)
+        await input.enterText(page,bidmylisting.agentPhoneNumber,"3234245106")
+    }
+    async agentZipCode (page) {
+        await waitUtility.waitForElementWithTime(page, bidmylisting.agentZipCode, 40000)
+        await clickUtility.clickElement(page, bidmylisting.agentZipCode)
+        await input.enterText(page,bidmylisting.agentZipCode,"9980")
+        let valueEnteredOnWebPage = await clickUtility.getAttributeValue(page,'#zip','value')
+        await expect(valueEnteredOnWebPage).to.contain("9980")
+    }
 }
 
 export default new Homeowner();
