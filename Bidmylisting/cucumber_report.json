@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 927143150
+              "duration": 1097620938
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1114757
+              "duration": 1415223
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9421624434
+              "duration": 18170945190
             }
           },
           {
@@ -53,7 +53,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 136821974
+              "duration": 139652552
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "The user enter the First Name",
+            "match": {
+              "location": "src/features/Bidmmylisting_steps/Home_owners_steps.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 266728880
             }
           },
           {
@@ -61,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 320042
+              "duration": 201579
             }
           }
         ],

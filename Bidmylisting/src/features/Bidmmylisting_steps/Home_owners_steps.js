@@ -64,3 +64,9 @@ await HomeOwner.createMyListing(this.page)
 Then(/^The user click on agent registration button$/,async function () {
 await HomeOwner.agentRegistration(this.page)
 });
+Then(/^The user enter the First Name$/,async function () {
+await HomeOwner.agentFistName(this.page)
+});
+Then(/^The user enter the last Name for agent$/,async function () {
+await HomeOwner.agentLastName(this.page)
+});
