@@ -18,6 +18,21 @@ const pageURLs = [
   urls.HOMEOWNER_REG_LISTING_DESCRIPTION
 ]
 
+// Full homeowner registration happy path
+async function registerHomeowner (page) {
+  await page.goto(urls.HOMEOWNER_REG_ADDRES_LOOKUP);
+  await addressLookup(page);
+  await propertyInformation(page);
+  await questionWorkingWithAgent(page);
+  await questionWhenToSell(page);
+  await questionPropertyCondition(page);
+  await questionBuyingHome(page);
+  await accountInfo(page);
+  await questionListingPrice(page);
+  await photoUpload(page);
+  await listingDescription(page);
+} 
+
 // Note: this function is for happy path and it just fills in the form
 async function addressLookup (page) {
   await expect(page).toHaveURL(pageURLs[1]);
@@ -207,6 +222,7 @@ async function testSkip(page) {
 }
 
 module.exports = {
+  registerHomeowner,
   addressLookup,
   addressLookupNoZipCode,
   propertyInformation,
