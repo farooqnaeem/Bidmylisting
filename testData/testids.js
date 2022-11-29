@@ -12,21 +12,6 @@ module.exports = {
     agentRegister:      'data-testid=homepage-agent-register-link'
   },
 
-  login: {
-    emailLabel: 'text="Email"',
-    emailInput: 'data-testid=signin-email-field',
-    pwdLabel: 'text="Password"',
-    pwdInput: 'data-testid=signin-password-field',
-    showHide: 'button[aria-label="toggle password visibility"]',
-    rememberMe: 'input[type="checkbox"]',
-    forgotPwdLink: 'text=Forgot Password',
-    forgotPwdDlg: '.MuiDialog-paper',
-    submitBtn: 'data-testid=signin-submit',
-    createAccount: 'button >> text=Create Account',
-    createAgent: 'li >> text="I am an agent"',
-    createSeller: 'li >> text="I am a homeowner"'
-  },
-
   agentRegistration: {
     firstName:      'data-testid=agent-registration-step-1-first-name',
     lastName:       'data-testid=agent-registration-step-1-last-name',

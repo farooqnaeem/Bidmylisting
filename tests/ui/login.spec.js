@@ -1,25 +1,35 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const testIds = require('../../testData/testids.js');
-const testData = require('../../testData/testData.js');
+const urls = require('../../testUtils/urls');
+const loginPage = require('../../testPages/login');
 
-test.describe('Login Page Tests', () => {
+test.describe('Login Tests', () => {
 
   test.beforeEach(async ({ page }) => {
-    await page.goto('/');
+    await page.goto(urls.SIGN_IN);
   });
 
-  test('Login', async ({ page }) => {
-    // await page.goto(bml.url.dev);
-    await page.locator(testIds.homepage.signin).click();
-    await page.locator(testIds.login.emailInput).fill(testData.homeowner.email);
-    await page.locator(testIds.login.pwdInput).fill(testData.homeowner.password);
-    await page.locator(testIds.login.submitBtn).click();
-
-    // validate after login, check for logout button
-
-
+  test('Login as an agent', async ({ page }) => {
+      await loginPage.loginAsAgent(page);
   });
 
+  test('Login as a homeowner', async ({ page }) => {
+    await loginPage.loginAsHomeowner(page);
+  });
 
+  test('Login as an admin', async ({ page }) => {
+    await loginPage.loginAsAdmin(page);
+  });
+
+  test.skip('Test Forgot Password', async ({ page }) => {
+    // TODO
+  });
+
+  test.skip('Test Remember Me', async ({ page }) => {
+    // TODO
+  });
+
+  test.skip('Do login page validations', async ({ page }) => {
+    // TODO
+  });
 });

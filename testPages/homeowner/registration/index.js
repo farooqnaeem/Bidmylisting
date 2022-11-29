@@ -1,5 +1,5 @@
 // @ts-check
-const { test, expect } = require('@playwright/test');
+const { expect } = require('@playwright/test');
 const ids = require('./ids');
 const data = require('./data');
 const urls = require('../../../testUtils/urls');
