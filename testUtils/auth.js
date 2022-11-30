@@ -1,6 +1,6 @@
 // @ts-check
 const { expect } = require('@playwright/test');
-const config = require('../../playwright.config.js');
+const config = require('../playwright.config.js');
 
 const serverUrl = config.api.url;
 

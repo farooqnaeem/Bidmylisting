@@ -22,6 +22,7 @@ const config = {
   // Config for BML API tests
   api: {
     url: 'https://api.qa.bidmylisting.io',
+    authMsUrl: 'https://auth.ms.qa.bidmylisting.io',
     listingMsUrl: 'https://listing.ms.qa.bidmylisting.io',
     eventsMsUrl: 'https://events.ms.qa.bidmylisting.io',
     notificationMsUrl: 'https://notifications.ms.qa.bidmylisting.io'
