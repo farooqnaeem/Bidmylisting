@@ -1,13 +1,8 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const urls = require('../../testUtils/urls');
 const loginPage = require('../../testPages/login');
 
 test.describe('Login Tests', () => {
-
-  test.beforeEach(async ({ page }) => {
-    await page.goto(urls.SIGN_IN);
-  });
 
   test('Login as an agent', async ({ page }) => {
       await loginPage.loginAsAgent(page);

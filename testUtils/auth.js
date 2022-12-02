@@ -10,9 +10,10 @@ const serverUrl = config.api.url;
 
 // Logs in to the backend to retrieve a Bearer token
 async function getToken(request, email, password) {
-  const response = await request.post(serverUrl + '/user/login', {
+  const url = serverUrl + '/v2/auth/signin';
+  console.log(`Calling api ${url}`);
+  const response = await request.post(url, {
     data: {
-      grantType: 'password',
       username: email,
       password: password
     }

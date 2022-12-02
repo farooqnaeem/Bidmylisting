@@ -25,6 +25,7 @@ async function loginAsAdmin(page) {
 }
 
 async function login(page, email, password) {
+  await page.goto(urls.SIGN_IN);
   const submitBtn = page.locator(ids.submit);
   await expect(submitBtn).not.toBeEnabled();
   await page.locator(ids.email).fill(email);

@@ -2,7 +2,8 @@
 const { test, expect } = require('@playwright/test');
 const testIds = require('../../testData/testids.js');
 const testData = require('../../testData/testData.js');
-const common = require('../../util/common.js');
+const homeReg = require('../../testPages/homeowner/registration');
+const common = require('../../testPages/common');
 const URL = require('url');
 
 /* 
@@ -13,8 +14,7 @@ test.describe('Marketing Funnel Tests', () => {
 
   test('Homeowner Registration Page 1', async ({ page }) => {
     await page.goto('/registration/homeowner/address-lookup');
-    await common.testHomeownerRegistrationAddressLookup(page);
-    await page.locator(testIds.homeownerRegistration.nextButton).click();
+    await homeReg.addressLookup(page);
     await expect(page).toHaveURL('/registration/homeowner/property-information');
   });
 

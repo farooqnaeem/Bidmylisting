@@ -2,20 +2,7 @@ const myDate = Date.now();
 const loginPrefix = process.env.LOGIN_PREFIX ? process.env.LOGIN_PREFIX : 'qatest';
 
 module.exports = {
-    login: {
-      homeowner: {
-        email: process.env.HOMEOWNER_LOGIN ? process.env.HOMEOWNER_LOGIN : `${loginPrefix}+auto-ho@bidmylisting.com`,
-        password: process.env.HOMEOWNER_PASSWORD ? process.env.HOMEOWNER_PASSWORD : 'Homeowner2022!'
-      },
-      agent: {
-        email: `${loginPrefix}+auto-ag@bidmylisting.com`,
-        password: 'Agent2022!'
-      }
-    },
-    homeowner: {
-      email:    'jason+ho-ci@bidmylisting.com',
-      password: 'BMLpassword2022!'
-    },
+
     agentRegistration: {
       firstName:  'Agent',
       lastName:   'QA Automation',
