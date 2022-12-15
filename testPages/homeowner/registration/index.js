@@ -31,7 +31,7 @@ async function registerHomeowner (page) {
   await questionListingPrice(page);
   await photoUpload(page);
   await listingDescription(page);
-} 
+}
 
 // Note: this function is for happy path and it just fills in the form
 async function addressLookup (page) {
