@@ -49,7 +49,6 @@ async function doneButton (page) {
 async function dashboardListing(page) {
   await page.waitForTimeout(3000)
   await page.locator(ids.dashboardListing).click()
-  await page.pause();
 }
 module.exports = {
   publishCurrentListing,
