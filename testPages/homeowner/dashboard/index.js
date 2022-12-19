@@ -2,6 +2,8 @@
 const { expect } = require('@playwright/test');
 const ids = require('./ids.js');
 const data = require('./data.js');
+const {loginAsHomeowner} = require("../../login");
+
 
 // gets the information presented by the currently displayed listing
 async function getCurrentListing(page) {
@@ -33,10 +35,18 @@ async function selectListing(address, page) {
   await page.locator(dataTestId).click();
   await page.waitForTimeout(1000);
 }
+async function dashboardListingInfo (page) {
+  await loginAsHomeowner(page)
+  await doneButton(page)
+}
 
-// TODO - create a func that verifies the recent bids component
+async function doneButton (page) {
+  await page.waitForTimeout(5000)
+  await page.locator(ids.doneButton).click()
+}
 
 module.exports = {
   publishCurrentListing,
-  selectListing
+  selectListing,
+  dashboardListingInfo,
 }
