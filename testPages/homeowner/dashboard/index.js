@@ -38,18 +38,33 @@ async function selectListing(address, page) {
 async function dashboardListingInfo (page) {
   await loginAsHomeowner(page)
   await doneButton(page)
-  await dashboardListing(page)
+  await viewBidButton(page)
+  await homeButton(page)
+  await selectListingInfoFromDropDown(page)
 }
 
 async function doneButton (page) {
-  await page.waitForTimeout(2000)
+  await page.waitForTimeout(3000)
   await page.locator(ids.doneButton).click()
 }
 
-async function dashboardListing(page) {
-  await page.waitForTimeout(3000)
-  await page.locator(ids.dashboardListing).click()
+async function viewBidButton(page) {
+  await page.waitForTimeout(2000)
+  await page.locator(ids.viewDetailsBtn).click()
 }
+async function homeButton(page) {
+  await page.waitForTimeout(2000)
+  await page.locator(ids.homeButton).click()
+
+}
+ async function selectListingInfoFromDropDown(page) {
+   await page.waitForTimeout(4000)
+   await page.locator(ids.menuToggle).click()
+   await page.waitForTimeout(4000)
+   await page.locator(ids.selectListingInfoFromDropDown).click()
+   await page.locator(ids.editListingBtn).click()
+}
+
 module.exports = {
   publishCurrentListing,
   selectListing,
