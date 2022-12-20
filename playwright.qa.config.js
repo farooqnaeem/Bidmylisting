@@ -3,9 +3,9 @@ const { devices } = require('@playwright/test');
 
 const config = {
   testDir: './tests',
-  timeout: 30 * 1000,
+  timeout: 300 * 1000,
   expect: {
-    timeout: 5000
+    timeout: 30000
   },
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
