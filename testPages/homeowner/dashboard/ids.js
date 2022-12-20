@@ -11,5 +11,7 @@ module.exports = {
   publishDialogCancel:  'data-testid=seller-publish-dialog-secondary-action',
   publishDialogActivate:'data-testid=seller-publish-dialog-primary-action',
   doneButton:'data-testid=seller-pending-publish-dialog-primary-action',
-  dashboardListing:'data-testid=homeowner-right-menu-view-details-button'
+  homeButton:'data-testid=menu-icon-Home',
+  selectListingInfoFromDropDown:'data-testid=homeowner-right-menu-selector-toggle-listing-1',
+  menuToggle:'data-testid=homeowner-right-menu-selector-toggle-listing'
 }
