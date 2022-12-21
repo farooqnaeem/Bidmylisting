@@ -20,18 +20,25 @@ async function plusSignButton(page) {
     await page.locator(ids.plusSignButton).click()
 }
 async function propertyInformation (page) {
-    await page.waitForTimeout(3000)
+    await page.waitForTimeout(1000)
     await page.locator(ids.address).click()
     await page.keyboard.type(data.address);
-    await page.waitForTimeout(3000);
+    await page.waitForTimeout(1000);
     await page.keyboard.press('ArrowDown');
     await page.waitForTimeout(1000);
     await page.keyboard.press('Enter');
-    await page.waitForTimeout(2000)
+    await page.waitForTimeout(1000)
+    await page.locator(ids.houseSize).click()
+    await page.keyboard.type(data.houseSize)
+    await page.waitForTimeout(1000)
     await page.locator(ids.bathrooms).click()
     await page.keyboard.type(data.bathrooms)
-    await page.waitForTimeout(3000)
+    await page.waitForTimeout(1000)
+    await page.locator(ids.bedrooms).click()
+    await page.keyboard.type(data.bedRooms)
+    await page.waitForTimeout(1000)
     await page.locator(ids.homeCondition).click()
+    await page.locator(ids.continueButton).click()
 
 }
 async function listingPrice (page) {
