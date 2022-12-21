@@ -12,6 +12,6 @@ module.exports = {
         description:'data-testid=listing-step3-description-input',
         finishButton:'data-testid=listing-step3-submit-button',
         doneButton:'data-testid=seller-pending-publish-dialog-primary-action',
-        homeCondition:'data-testid=listing-step1-condition-2'
+        homeCondition:'data-testid=listing-step1-condition-1'
 
 }
