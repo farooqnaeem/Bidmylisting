@@ -14,7 +14,7 @@ async function loginAsAgent(page) {
 
 async function loginAsHomeowner(page) {
   await login(page, data[env].homeowner[0], data[env].homeowner[1]);
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(1000);
   await expect(page).toHaveURL(urls.HOMEOWNER_DASHBOARD);
 }
 
