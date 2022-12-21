@@ -1,6 +1,8 @@
 module.exports = {
-        address:"1222 26th Ave, Fairbanks, AK 99701, USA",
+        address:"1226 Charbray Street, Danville, CA, USA",
         bathrooms:"5",
+        bedRooms:"4",
+        houseSize:"2300",
         listingPrice:"3500",
         uploadImage:"testData/images/house.png",
         importantToKnow:"I have read freeCodeCamp's contribution guidelines.\n" +
