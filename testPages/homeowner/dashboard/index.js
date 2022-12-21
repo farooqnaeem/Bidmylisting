@@ -52,6 +52,7 @@ async function viewBidButton(page) {
   await page.waitForTimeout(2000)
   await page.locator(ids.viewDetailsBtn).click()
 }
+
 async function homeButton(page) {
   await page.waitForTimeout(2000)
   await page.locator(ids.homeButton).click()
@@ -63,7 +64,9 @@ async function homeButton(page) {
    await page.waitForTimeout(4000)
    await page.locator(ids.selectListingInfoFromDropDown).click()
    await page.locator(ids.editListingBtn).click()
-}
+   await page.locator(ids.homeButton).click()
+
+ }
 
 module.exports = {
   publishCurrentListing,
