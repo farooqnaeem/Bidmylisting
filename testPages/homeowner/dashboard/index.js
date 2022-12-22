@@ -2,6 +2,8 @@
 const { expect } = require('@playwright/test');
 const ids = require('./ids.js');
 const data = require('./data.js');
+const {loginAsHomeowner} = require("../../login");
+
 
 // gets the information presented by the currently displayed listing
 async function getCurrentListing(page) {
@@ -33,10 +35,41 @@ async function selectListing(address, page) {
   await page.locator(dataTestId).click();
   await page.waitForTimeout(1000);
 }
+async function dashboardListingInfo (page) {
+  await loginAsHomeowner(page)
+  await doneButton(page)
+  await viewBidButton(page)
+  await homeButton(page)
+  await selectListingInfoFromDropDown(page)
+}
 
-// TODO - create a func that verifies the recent bids component
+async function doneButton (page) {
+  await page.waitForTimeout(3000)
+  await page.locator(ids.doneButton).click()
+}
+
+async function viewBidButton(page) {
+  await page.waitForTimeout(2000)
+  await page.locator(ids.viewDetailsBtn).click()
+}
+
+async function homeButton(page) {
+  await page.waitForTimeout(2000)
+  await page.locator(ids.homeButton).click()
+
+}
+ async function selectListingInfoFromDropDown(page) {
+   await page.waitForTimeout(4000)
+   await page.locator(ids.menuToggle).click()
+   await page.waitForTimeout(4000)
+   await page.locator(ids.selectListingInfoFromDropDown).click()
+   await page.locator(ids.editListingBtn).click()
+   await page.locator(ids.homeButton).click()
+
+ }
 
 module.exports = {
   publishCurrentListing,
-  selectListing
+  selectListing,
+  dashboardListingInfo,
 }

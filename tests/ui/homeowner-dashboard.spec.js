@@ -1,16 +1,8 @@
-// @ts-check
 const { test } = require('@playwright/test');
-const login = require('../../testPages/login');
+const dashboard = require('../../testPages/homeowner/dashboard');
+test.describe('Login Tests', () => {
 
-test.describe('Homeowner Dashboard Tests', () => {
-
-  var homeownerToken = '';
-
-  test.beforeEach( async ({page}) => {
-    await login.loginAsHomeowner(page);
-  });
-
-  test('Page navigation elements', async ({page}) => {
-    // TODO
+  test('Dashboard Listing Info ', async ({page}) => {
+    await dashboard.dashboardListingInfo(page);
   });
 });
