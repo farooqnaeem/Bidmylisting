@@ -9,5 +9,9 @@ module.exports = {
   publishDialog:        'data-testid=seller-publish-dialog',
   publishDialogClose:   'data-testid=seller-publish-dialog-close',
   publishDialogCancel:  'data-testid=seller-publish-dialog-secondary-action',
-  publishDialogActivate:'data-testid=seller-publish-dialog-primary-action'
+  publishDialogActivate:'data-testid=seller-publish-dialog-primary-action',
+  doneButton:'data-testid=seller-pending-publish-dialog-primary-action',
+  homeButton:'data-testid=menu-icon-Home',
+  selectListingInfoFromDropDown:'data-testid=homeowner-right-menu-selector-toggle-listing-1',
+  menuToggle:'data-testid=homeowner-right-menu-selector-toggle-listing'
 }
