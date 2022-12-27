@@ -28,7 +28,7 @@ async function propertyInformation (page) {
     await page.waitForTimeout(1000);
     await page.keyboard.press('Enter');
     await page.waitForTimeout(1000)
-    await page.waitForTimeout(3000)
+    await page.waitForTimeout(4000)
     await page.locator(ids.backButton).click()
     await page.locator(ids.houseSize).click()
     await page.keyboard.type(data.houseSize)
