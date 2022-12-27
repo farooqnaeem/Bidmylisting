@@ -28,6 +28,8 @@ async function propertyInformation (page) {
     await page.waitForTimeout(1000);
     await page.keyboard.press('Enter');
     await page.waitForTimeout(1000)
+    await page.waitForTimeout(3000)
+    await page.locator(ids.backButton).click()
     await page.locator(ids.houseSize).click()
     await page.keyboard.type(data.houseSize)
     await page.waitForTimeout(1000)
@@ -40,8 +42,10 @@ async function propertyInformation (page) {
     await page.locator(ids.homeCondition).click()
     await page.locator(ids.continueButton).click()
 
+
 }
 async function listingPrice (page) {
+
     await page.waitForTimeout(2000)
     await page.locator(ids.listingPrice).click()
     await page.keyboard.type(data.listingPrice)
