@@ -13,5 +13,9 @@ module.exports = {
   doneButton:'data-testid=seller-pending-publish-dialog-primary-action',
   homeButton:'data-testid=menu-icon-Home',
   selectListingInfoFromDropDown:'data-testid=homeowner-right-menu-selector-toggle-listing-1',
-  menuToggle:'data-testid=homeowner-right-menu-selector-toggle-listing'
+  menuToggle:'data-testid=homeowner-right-menu-selector-toggle-listing',
+  lowestCommission:'data-testid=property-bids-lowest-commission',
+  highestCommission:'data-testid=property-bids-highest-savings',
+  mostRecent:'data-testid=property-bids-most-recent',
+
 }

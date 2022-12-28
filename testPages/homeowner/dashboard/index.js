@@ -41,6 +41,7 @@ async function dashboardListingInfo (page) {
   await viewBidButton(page)
   await homeButton(page)
   await selectListingInfoFromDropDown(page)
+
 }
 
 async function doneButton (page) {
@@ -51,13 +52,19 @@ async function doneButton (page) {
 async function viewBidButton(page) {
   await page.waitForTimeout(2000)
   await page.locator(ids.viewDetailsBtn).click()
+  await page.waitForTimeout(3000)
+  await page.locator(ids.lowestCommission).click()
+  await page.waitForTimeout(3000)
+  await page.locator(ids.highestCommission).click()
+  await page.waitForTimeout(3000)
+  await page.locator(ids.mostRecent).click()
 }
 
 async function homeButton(page) {
   await page.waitForTimeout(2000)
   await page.locator(ids.homeButton).click()
-
 }
+
  async function selectListingInfoFromDropDown(page) {
    await page.waitForTimeout(4000)
    await page.locator(ids.menuToggle).click()
@@ -65,8 +72,7 @@ async function homeButton(page) {
    await page.locator(ids.selectListingInfoFromDropDown).click()
    await page.locator(ids.editListingBtn).click()
    await page.locator(ids.homeButton).click()
-
- }
+}
 
 module.exports = {
   publishCurrentListing,
