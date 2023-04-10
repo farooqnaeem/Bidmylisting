@@ -13,7 +13,7 @@ Selfie pop Automation suite setup with puppeteer
 
 ## Setting up the automation suite
 
-1. Clone the Sendoso test-automation locally into a folder - (https://github.com/Selfie-Pop-Inc/Web-Automation-suite.git
+1. Clone the Sendoso test-automation locally into a folder - (https://github.com/farooqnaeem/Bidmylisting.git
 )
    - Use the following command inside the desired folder - git clone https://github.com/Selfie-Pop-Inc/Web-Automation-suite.git
 
