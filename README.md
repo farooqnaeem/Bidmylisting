@@ -15,7 +15,7 @@ Selfie pop Automation suite setup with puppeteer
 
 1. Clone the Sendoso test-automation locally into a folder - (https://github.com/farooqnaeem/Bidmylisting.git
 )
-   - Use the following command inside the desired folder - git clone https://github.com/Selfie-Pop-Inc/Web-Automation-suite.git
+   - Use the following command inside the desired folder - git clone https://github.com/farooqnaeem/Bidmylisting.git
 
 2. Go inside the folder and run the following command from the terminal/command prompt - npm install
 3. All the dependencies from package.json and ambient typings would be installed in the node_modules folder
